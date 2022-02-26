@@ -1,0 +1,120 @@
+apollo_beta=c(b_tt_pt_business = 0,
+              b_tt_pt_commuters = 0,
+              b_tt_pt_leisure = 0,
+              b_tt_pt_shopping = 0,
+              
+              b_tt_car_business = 0,
+              b_tt_car_commuters = 0,
+              b_tt_car_leisure = 0,
+              b_tt_car_shopping = 0,
+              
+              b_dc = 0,
+              
+              b_tc_business = 0,
+              b_tc_commuters = 0,
+              b_tc_leisure = 0,
+              b_tc_shopping = 0,
+              
+              b_ic_business = 0,
+              b_ic_commuters = 0,
+              b_ic_leisure = 0,
+              b_ic_shopping = 0,
+              
+              b_hw_business = 0,
+              b_hw_commuters = 0,
+              b_hw_leisure = 0,
+              b_hw_shopping = 0,
+              
+              b_bus_commuters = 0,
+              b_bus_leisure = 0,
+              b_bus_shopping = 0,
+              
+              b_rail_business = 0,
+              b_rail_commuters = 0,
+              b_rail_leisure = 0,
+              b_rail_shopping = 0,
+              
+              b_car_inertia   = 0,
+              b_car_available   = 0,
+              b_car_male   = 0,
+              
+              b_bus_disc = 0,
+              b_rail_disc = 0,
+              b_bus_ga = 0,
+              b_rail_ga = 0,
+              
+              lam_dist_tt_pt_business = 0,
+              lam_dist_tt_pt_commuters = 0,
+              lam_dist_tt_pt_leisure = 0,
+              lam_dist_tt_pt_shopping = 0,
+              
+              lam_dist_tt_car_business = 0,
+              lam_dist_tt_car_commuters = 0,
+              lam_dist_tt_car_leisure = 0,
+              lam_dist_tt_car_shopping = 0,
+              
+              lam_dist_tc = 0,
+              lam_inc_tc_business = 0,
+              lam_inc_tc_commuters = 0,
+              
+              mu_mc_car_bus = 1,
+              mu_mc_car_rail = 1,
+              mu_rc_bus = 1,
+              mu_rc_car = 1,
+              mu_rc_rail_by_car = 1,
+              mu_rc_rail = 1,
+              )
+
+  mnl_settings_1 = list(
+    alternatives  = c(car=1, bus = 2), 
+    avail         = list(car= AL_M_CAR, bus=AL_M_BUS), 
+    choiceVar     = CHOICE, 
+    utilities     = list(car  = mu_mc_car_bus*V[["car"]],
+                         bus  = mu_mc_car_bus*V[["bus"]]),
+    rows          = (N_O_S==1)
+  )
+  
+  mnl_settings_2 = list(
+    alternatives  = c(car=1, rail = 2), 
+    avail         = list(car= AL_M_CAR, bus=AL_M_RAIL), 
+    choiceVar     = CHOICE, 
+    utilities     = list(car  = mu_mc_car_rail*V[["car"]],
+                         rail  = mu_mc_car_rail*V[["rail"]]),
+    rows          = (N_O_S==2)
+  )
+  
+  mnl_settings_3 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_bus *V[["a"]],
+                         b  = mu_rc_bus *V[["b"]]),
+    rows          = (N_O_S==3)
+  )
+  
+  mnl_settings_4 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_car *V[["a"]],
+                         b  = mu_rc_car *V[["b"]]),
+    rows          = (N_O_S==4)
+  )
+  
+  mnl_settings_5 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_rail_by_car *V[["a"]],
+                         b  = mu_rc_rail_by_car *V[["b"]]),
+    rows          = (N_O_S==5)
+  )
+  
+  mnl_settings_6 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_rail *V[["a"]],
+                         b  = mu_rc_rail *V[["b"]]),
+    rows          = (N_O_S==6)
+  )

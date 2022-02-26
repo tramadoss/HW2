@@ -1,0 +1,37 @@
+---
+title: "HW2 Advanced DCM"
+author: "Trisha Ramadoss"
+date: "2/18/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm(list = ls())
+```
+
+\pagenumbering{arabic}
+
+```{r echo = FALSE, warning= FALSE, message=FALSE, output = FALSE, results = FALSE}
+source("HW2_script.R")
+options(knitr.kable.NA = '')
+```
+
+### Table 1
+
+```{r echo = FALSE, warning= FALSE, message=FALSE, output = FALSE}
+t1 %>% knitr::kable(digits = 1)
+```
+
+### Table 2
+
+```{r echo = FALSE, warning= FALSE, message=FALSE, output = FALSE}
+t2 %>% knitr::kable(digits = 1)
+```
+
+### Table 3
+
+```{r echo = FALSE, warning= FALSE, message=FALSE, output = FALSE}
+t3_counts %>% knitr::kable()
+t3_addl %>% knitr::kable(digits = 2)
+```
