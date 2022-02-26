@@ -14,7 +14,7 @@ apollo_initialise()
 
 ### Set core controls
 apollo_control = list(
-  modelName       = "Swiss_VOT_np_asc",
+  modelName       = "Swiss_VOT_no_asc",
   modelDescr      = "Model from Axhausen",
   nCores          = 4,
   indivID         = "P_NR", 
