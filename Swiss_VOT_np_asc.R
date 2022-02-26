@@ -14,7 +14,7 @@ apollo_initialise()
 
 ### Set core controls
 apollo_control = list(
-  modelName       = "Swiss_VOT",
+  modelName       = "Swiss_VOT_np_asc",
   modelDescr      = "Model from Axhausen",
   nCores          = 4,
   indivID         = "P_NR", 
@@ -31,8 +31,8 @@ database = readRDS("swiss_vot_rdata.RDS")
 
 database <- database %>%
   mutate(across(everything(), as.numeric)) %>%
-  mutate(DC_A = replace_na(TT_CON_A/ (TT_CON_A + TT_UNC_A), 0)) %>%
-  mutate(DC_B = replace_na(TT_CON_B/ (TT_CON_B + TT_UNC_B), 0)) %>%
+  #mutate(DC_A = replace_na(TT_CON_A/ (TT_CON_A + TT_UNC_A), 0)) %>%
+  #mutate(DC_B = replace_na(TT_CON_B/ (TT_CON_B + TT_UNC_B), 0)) %>%
   inner_join(
     tibble(
       N_O_S = 1:6,
@@ -49,74 +49,73 @@ database <- database %>%
 
 ### Vector of parameters, including any that are kept fixed in estimation
 apollo_beta=c(asc_a = 0,
-              asc_b = 0,
-
+              
               b_tt_pt_business = 0,
               b_tt_pt_commuters = 0,
               b_tt_pt_leisure = 0,
               b_tt_pt_shopping = 0,
-
+              
               b_tt_car_business = 0,
               b_tt_car_commuters = 0,
               b_tt_car_leisure = 0,
               b_tt_car_shopping = 0,
-
+              
               b_dc = 0,
               
               b_tc_business = 0,
               b_tc_commuters = 0,
               b_tc_leisure = 0,
               b_tc_shopping = 0,
-
+              
               b_ic_business = 0,
               b_ic_commuters = 0,
               b_ic_leisure = 0,
               b_ic_shopping = 0,
-
+              
               b_hw_business = 0,
               b_hw_commuters = 0,
               b_hw_leisure = 0,
               b_hw_shopping = 0,
-
+              
               b_bus_commuters = 0,
               b_bus_leisure = 0,
               b_bus_shopping = 0,
-
+              
               b_rail_business = 0,
               b_rail_commuters = 0,
               b_rail_leisure = 0,
               b_rail_shopping = 0,
-
+              
               b_car_inertia   = 0,
               b_car_available   = 0,
               b_car_male   = 0,
-
+              
               b_bus_disc = 0,
               b_rail_disc = 0,
               b_bus_ga = 0,
               b_rail_ga = 0,
-
+              
               lam_dist_tt_pt_business = 1,
               lam_dist_tt_pt_commuters = 1,
               lam_dist_tt_pt_leisure = 1,
               lam_dist_tt_pt_shopping = 1,
-
+              
               lam_dist_tt_car_business = 1,
               lam_dist_tt_car_commuters = 1,
               lam_dist_tt_car_leisure = 1,
               lam_dist_tt_car_shopping = 1,
-
+              
               lam_dist_tc = 1,
               lam_inc_tc_business = 1,
               lam_inc_tc_commuters = 1,
-
+              
               mu_mc_car_bus = 1,
               mu_mc_car_rail = 1,
               mu_rc_bus = 1,
               mu_rc_car = 1,
               mu_rc_rail_by_car = 1,
               mu_rc_rail = 1
-              )
+)
 
 ### Vector with names (in quotes) of parameters to be kept fixed at their starting value in apollo_beta, use apollo_beta_fixed = c() if none
 apollo_fixed = c("asc_a","mu_rc_rail")
@@ -132,11 +131,11 @@ apollo_inputs = apollo_validateInputs()
 # ################################################################# #
 
 apollo_probabilities=function(apollo_beta, apollo_inputs, functionality="estimate"){
-
+  
   ### Attach inputs and detach after function exit
   apollo_attach(apollo_beta, apollo_inputs)
   on.exit(apollo_detach(apollo_beta, apollo_inputs))
-
+  
   ### Create list of probabilities P
   P = list()
   
@@ -158,32 +157,32 @@ apollo_probabilities=function(apollo_beta, apollo_inputs, functionality="estimat
     b_tt_pt_commuters * PUR_P * (dist/mean(dist))^lam_dist_tt_pt_commuters +
     b_tt_pt_leisure * PUR_T * (dist/mean(dist))^lam_dist_tt_pt_leisure +
     b_tt_pt_shopping * PUR_E * (dist/mean(dist))^lam_dist_tt_pt_shopping
-
-   tt_car_elas = # need to multiply by TT_CAR
+  
+  tt_car_elas = # need to multiply by TT_CAR
     b_tt_car_business * PUR_N * (dist/mean(dist))^lam_dist_tt_car_business +
     b_tt_car_commuters * PUR_P * (dist/mean(dist))^lam_dist_tt_car_commuters +
     b_tt_car_leisure * PUR_T * (dist/mean(dist))^lam_dist_tt_car_leisure +
     b_tt_car_shopping * PUR_E * (dist/mean(dist))^lam_dist_tt_car_shopping
-   
-   inc = HH_INC_A
-   tc_elas = 
-     b_tc_business * PUR_N * (inc/mean(inc))^lam_inc_tc_business * (dist/mean(dist))^lam_dist_tc +
-     b_tc_commuters * PUR_P * (inc/mean(inc))^lam_inc_tc_commuters * (dist/mean(dist))^lam_dist_tc +
-     b_tc_leisure * PUR_T * (dist/mean(dist))^lam_dist_tc +
-     b_tc_shopping * PUR_E * (dist/mean(dist))^lam_dist_tc
-   
-   ic_p =               
-     b_ic_business * PUR_N +
-     b_ic_commuters * PUR_P +
-     b_ic_leisure * PUR_T +
-     b_ic_shopping * PUR_E
-   
-   hw_p = 
-     b_hw_business * PUR_N +
-     b_hw_commuters * PUR_P +
-     b_hw_leisure * PUR_T +
-     b_hw_shopping * PUR_E
-   
+  
+  inc = HH_INC_A
+  tc_elas = 
+    b_tc_business * PUR_N * (inc/mean(inc))^lam_inc_tc_business * (dist/mean(dist))^lam_dist_tc +
+    b_tc_commuters * PUR_P * (inc/mean(inc))^lam_inc_tc_commuters * (dist/mean(dist))^lam_dist_tc +
+    b_tc_leisure * PUR_T * (dist/mean(dist))^lam_dist_tc +
+    b_tc_shopping * PUR_E * (dist/mean(dist))^lam_dist_tc
+  
+  ic_p =               
+    b_ic_business * PUR_N +
+    b_ic_commuters * PUR_P +
+    b_ic_leisure * PUR_T +
+    b_ic_shopping * PUR_E
+  
+  hw_p = 
+    b_hw_business * PUR_N +
+    b_hw_commuters * PUR_P +
+    b_hw_leisure * PUR_T +
+    b_hw_shopping * PUR_E
+  
   ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
   V = list()
   V[["car"]]  = b_car_inertia * CAR   + b_car_available * VEH_AVA1 + b_car_male * MALE
@@ -193,7 +192,7 @@ apollo_probabilities=function(apollo_beta, apollo_inputs, functionality="estimat
   V[["a"]]    = asc_a + b_dc * S_O_C_A * CAR_A  +  tt_pt_elas * TT_A * PT_A  +  
     tt_car_elas * TT_A * CAR_A + tc_elas * TC_A + (ic_p + hw_p) * PT_A
   
-  V[["b"]]    = asc_b + b_dc * S_O_C_B * CAR_B  +  tt_pt_elas * TT_B * PT_B  +  
+  V[["b"]]    = b_dc * S_O_C_B * CAR_B  +  tt_pt_elas * TT_B * PT_B  +  
     tt_car_elas * TT_B * CAR_B + tc_elas * TC_B + (ic_p + hw_p) * PT_B
   
   ### Compute probabilities for the RP part of the data using MNL model

@@ -3,7 +3,7 @@ www.ApolloChoiceModelling.com
 
 Model name                       : Swiss_VOT
 Model description                : Model from Axhausen
-Model run at                     : 2022-02-21 15:23:33
+Model run at                     : 2022-02-21 15:41:23
 Estimation method                : bfgs
 Model diagnosis                  : successful convergence 
 Number of individuals            : 1225
@@ -22,62 +22,97 @@ Model without mixing
 LL(start)                        : -11000.25
 LL(0, whole model)               : -11000.25
 LL(C, whole model)               : -10657.19
-LL(final, whole model)           : -9720.334
-Rho-square (0)                   :  0.1164 
-Adj.Rho-square (0)               :  0.1155 
-Rho-square (C)                   :  0.0879 
-Adj.Rho-square (C)               :  0.0871 
-AIC                              :  19458.67 
-BIC                              :  19527.72 
+LL(final, whole model)           : -9405.36
+Rho-square (0)                   :  0.145 
+Adj.Rho-square (0)               :  0.1426 
+Rho-square (C)                   :  0.1175 
+Adj.Rho-square (C)               :  0.115 
+AIC                              :  18862.72 
+BIC                              :  19062.2 
 
 LL(0,1)                          : -332.7106
-LL(final,1)                      : -299.6513
+LL(final,1)                      : -308.4066
 LL(0,2)                          : -4009.163
-LL(final,2)                      : -2764.528
+LL(final,2)                      : -2541.558
 LL(0,3)                          : -835.9355
-LL(final,3)                      : -835.9091
+LL(final,3)                      : -835.97
 LL(0,4)                          : -1967.152
-LL(final,4)                      : -1965.528
+LL(final,4)                      : -1923.659
 LL(0,5)                          : -1428.576
-LL(final,5)                      : -1428.128
+LL(final,5)                      : -1410.238
 LL(0,6)                          : -2426.708
-LL(final,6)                      : -2426.589
+LL(final,6)                      : -2385.528
 
-Estimated parameters             :  9
-Time taken (hh:mm:ss)            :  00:00:15 
-     pre-estimation              :  00:00:1.27 
-     estimation                  :  00:00:10.97 
-     post-estimation             :  00:00:2.75 
-Iterations                       :  146  
-Min abs eigenvalue of Hessian    :  8.2e-05 
+Estimated parameters             :  26
+Time taken (hh:mm:ss)            :  00:53:51.14 
+     pre-estimation              :  00:00:14.02 
+     estimation                  :  00:34:55.2 
+     post-estimation             :  00:18:41.92 
+Iterations                       :  124  
+Min abs eigenvalue of Hessian    :  1350.532 
+Some eigenvalues of Hessian are positive, indicating potential problems!
 
 Unconstrained optimisation.
 
 Estimates:
-                     Estimate        s.e.   t.rat.(0)    Rob.s.e.
-asc_a                0.000000          NA          NA          NA
-asc_b                0.024175    0.070801      0.3414     0.15884
-b_car_inertia        0.116237    0.343698      0.3382     0.77364
-b_bus_disc           0.001258    0.007112      0.1769     0.01111
-b_rail_disc          0.048957    0.145640      0.3361     0.32855
-mu_mc_car_bus       30.840339   89.655153      0.3440   199.95194
-mu_mc_car_rail      21.546343   63.810983      0.3377   143.69400
-mu_rc_bus           -0.509338    2.751201     -0.1851     3.96826
-mu_rc_car           -2.802318    8.360931     -0.3352    18.55100
-mu_rc_rail_by_car   -1.706092    5.263143     -0.3242    11.20375
-mu_rc_rail           1.000000          NA          NA          NA
-                  Rob.t.rat.(0)
-asc_a                        NA
-asc_b                    0.1522
-b_car_inertia            0.1502
-b_bus_disc               0.1133
-b_rail_disc              0.1490
-mu_mc_car_bus            0.1542
-mu_mc_car_rail           0.1499
-mu_rc_bus               -0.1284
-mu_rc_car               -0.1511
-mu_rc_rail_by_car       -0.1523
-mu_rc_rail                   NA
+                             Estimate        s.e.   t.rat.(0)    Rob.s.e.
+asc_a                        0.000000          NA          NA          NA
+asc_b                        0.005474         NaN         NaN          NA
+b_tt_pt_business            -0.016759    0.003125    -5.36315          NA
+b_tt_pt_commuters           -0.029957    0.004829    -6.20406          NA
+b_tt_pt_leisure             -0.012154    0.001771    -6.86403          NA
+b_tt_pt_shopping            -0.016750    0.004775    -3.50793          NA
+b_tt_car_business           -0.029664    0.006298    -4.70970          NA
+b_tt_car_commuters          -0.040392    0.007115    -5.67712          NA
+b_tt_car_leisure            -0.019063    0.003658    -5.21080          NA
+b_tt_car_shopping           -0.028068    0.008047    -3.48803          NA
+b_dc                        -2.891381    0.682134    -4.23873          NA
+b_car_inertia                1.398880    0.321715     4.34819          NA
+b_bus_disc                   0.241975    0.093746     2.58117          NA
+b_rail_disc                  0.649644    0.133164     4.87853          NA
+lam_dist_tt_pt_business      0.194384    0.074861     2.59660          NA
+lam_dist_tt_pt_commuters     0.012739    0.176063     0.07235          NA
+lam_dist_tt_pt_leisure      3.518e-07         NaN         NaN          NA
+lam_dist_tt_pt_shopping      0.017962    0.334891     0.05364          NA
+lam_dist_tt_car_business    2.497e-07         NaN         NaN          NA
+lam_dist_tt_car_commuters    0.126476    0.144120     0.87758          NA
+lam_dist_tt_car_leisure    8.6371e-04    0.049510     0.01745          NA
+lam_dist_tt_car_shopping     0.034475    0.218268     0.15795          NA
+mu_mc_car_bus                2.879817    1.081663     2.66240          NA
+mu_mc_car_rail               1.584779    0.337040     4.70205          NA
+mu_rc_bus                    1.252745         NaN         NaN          NA
+mu_rc_car                    1.262395    0.259138     4.87151          NA
+mu_rc_rail_by_car            0.790161    0.176882     4.46717          NA
+mu_rc_rail                   1.000000          NA          NA          NA
+                          Rob.t.rat.(0)
+asc_a                                NA
+asc_b                                NA
+b_tt_pt_business                     NA
+b_tt_pt_commuters                    NA
+b_tt_pt_leisure                      NA
+b_tt_pt_shopping                     NA
+b_tt_car_business                    NA
+b_tt_car_commuters                   NA
+b_tt_car_leisure                     NA
+b_tt_car_shopping                    NA
+b_dc                                 NA
+b_car_inertia                        NA
+b_bus_disc                           NA
+b_rail_disc                          NA
+lam_dist_tt_pt_business              NA
+lam_dist_tt_pt_commuters             NA
+lam_dist_tt_pt_leisure               NA
+lam_dist_tt_pt_shopping              NA
+lam_dist_tt_car_business             NA
+lam_dist_tt_car_commuters            NA
+lam_dist_tt_car_leisure              NA
+lam_dist_tt_car_shopping             NA
+mu_mc_car_bus                        NA
+mu_mc_car_rail                       NA
+mu_rc_bus                            NA
+mu_rc_car                            NA
+mu_rc_rail_by_car                    NA
+mu_rc_rail                           NA
 
 
 Overview of choices for MNL model component 1:
@@ -129,249 +164,1470 @@ Percentage chosen when available   49.56   50.44
 
 
 Classical covariance matrix:
-                              asc_b     b_car_inertia
-asc_b                      0.005013           0.02432
-b_car_inertia              0.024316           0.11813
-b_bus_disc               1.8177e-04        8.8173e-04
-b_rail_disc                0.010294           0.05004
-mu_mc_car_bus             -6.331845         -30.71419
-mu_mc_car_rail            -4.513358         -21.93067
-mu_rc_bus                  0.097433           0.47262
-mu_rc_car                  0.581654           2.82146
-mu_rc_rail_by_car          0.349579           1.69572
-                         b_bus_disc       b_rail_disc
-asc_b                    1.8177e-04           0.01029
-b_car_inertia            8.8173e-04           0.05004
-b_bus_disc                5.058e-05        3.7327e-04
-b_rail_disc              3.7327e-04           0.02121
-mu_mc_car_bus             -0.262541         -13.00249
-mu_mc_car_rail            -0.163659          -9.29131
-mu_rc_bus                  0.003533           0.20008
-mu_rc_car                  0.021091           1.19443
-mu_rc_rail_by_car          0.012676           0.71786
-                      mu_mc_car_bus    mu_mc_car_rail
-asc_b                       -6.3318           -4.5134
-b_car_inertia              -30.7142          -21.9307
-b_bus_disc                  -0.2625           -0.1637
-b_rail_disc                -13.0025           -9.2913
-mu_mc_car_bus             8038.0464         5700.9229
-mu_mc_car_rail            5700.9229         4071.8416
-mu_rc_bus                 -123.0693          -87.7242
-mu_rc_car                 -734.6999         -523.6963
-mu_rc_rail_by_car         -441.5610         -314.7461
-                          mu_rc_bus         mu_rc_car
-asc_b                      0.097433           0.58165
-b_car_inertia              0.472621           2.82146
-b_bus_disc                 0.003533           0.02109
-b_rail_disc                0.200079           1.19443
-mu_mc_car_bus           -123.069320        -734.69986
-mu_mc_car_rail           -87.724189        -523.69631
-mu_rc_bus                  7.569108          11.30535
-mu_rc_car                 11.305354          69.90516
-mu_rc_rail_by_car          6.794616          40.56254
-                  mu_rc_rail_by_car
-asc_b                       0.34958
-b_car_inertia               1.69572
-b_bus_disc                  0.01268
-b_rail_disc                 0.71786
-mu_mc_car_bus            -441.56104
-mu_mc_car_rail           -314.74607
-mu_rc_bus                   6.79462
-mu_rc_car                  40.56254
-mu_rc_rail_by_car          27.70067
+                                              asc_b          b_tt_pt_business
+asc_b                                   -1.8512e-04                 4.040e-06
+b_tt_pt_business                          4.040e-06                 9.765e-06
+b_tt_pt_commuters                         8.127e-06                 7.275e-06
+b_tt_pt_leisure                           2.584e-06                 2.585e-06
+b_tt_pt_shopping                          4.609e-06                 5.480e-06
+b_tt_car_business                         7.360e-06                 1.629e-05
+b_tt_car_commuters                        7.187e-06                 1.105e-05
+b_tt_car_leisure                          1.611e-06                 5.380e-06
+b_tt_car_shopping                         5.297e-06                 1.060e-05
+b_dc                                       0.001098                  0.001131
+b_car_inertia                           -5.7663e-04               -5.7756e-04
+b_bus_disc                               8.9110e-04                -8.889e-06
+b_rail_disc                             -1.8489e-04               -2.3629e-04
+lam_dist_tt_pt_business                  -1.642e-05                 8.291e-06
+lam_dist_tt_pt_commuters                  5.071e-05               -1.1105e-04
+lam_dist_tt_pt_leisure                   -2.625e-06                -9.668e-07
+lam_dist_tt_pt_shopping                  1.3448e-04               -1.6027e-04
+lam_dist_tt_car_business                 -1.132e-07                -1.047e-05
+lam_dist_tt_car_commuters                -1.691e-05                -8.518e-05
+lam_dist_tt_car_leisure                  -8.523e-05                 1.120e-05
+lam_dist_tt_car_shopping                 -7.612e-06                -7.696e-05
+mu_mc_car_bus                             -0.008251                1.0818e-04
+mu_mc_car_rail                           5.7144e-04                6.2137e-04
+mu_rc_bus                                  0.166675                 -0.003637
+mu_rc_car                                4.4111e-04                4.2818e-04
+mu_rc_rail_by_car                        2.9727e-04                1.4342e-04
+                                  b_tt_pt_commuters           b_tt_pt_leisure
+asc_b                                     8.127e-06                 2.584e-06
+b_tt_pt_business                          7.275e-06                 2.585e-06
+b_tt_pt_commuters                         2.332e-05                 5.257e-06
+b_tt_pt_leisure                           5.257e-06                 3.135e-06
+b_tt_pt_shopping                          1.111e-05                 3.922e-06
+b_tt_car_business                         2.008e-05                 7.193e-06
+b_tt_car_commuters                        3.297e-05                 8.066e-06
+b_tt_car_leisure                          1.089e-05                 5.746e-06
+b_tt_car_shopping                         2.152e-05                 7.709e-06
+b_dc                                       0.002232                8.1585e-04
+b_car_inertia                             -0.001178               -4.1766e-04
+b_bus_disc                               -1.824e-05                -4.837e-06
+b_rail_disc                             -4.8793e-04               -1.6637e-04
+lam_dist_tt_pt_business                 -1.3103e-04                -4.805e-05
+lam_dist_tt_pt_commuters                -2.2897e-04                -8.367e-05
+lam_dist_tt_pt_leisure                   -1.853e-06                -1.050e-05
+lam_dist_tt_pt_shopping                 -3.1202e-04               -1.2125e-04
+lam_dist_tt_car_business                 -2.799e-07                -5.492e-08
+lam_dist_tt_car_commuters               -1.6425e-04                -6.282e-05
+lam_dist_tt_car_leisure                   1.949e-05                 1.176e-05
+lam_dist_tt_car_shopping                -1.5073e-04                -5.564e-05
+mu_mc_car_bus                            2.1991e-04                 6.341e-05
+mu_mc_car_rail                             0.001267                4.4549e-04
+mu_rc_bus                                 -0.007317                 -0.002326
+mu_rc_car                                8.2140e-04                3.1231e-04
+mu_rc_rail_by_car                        3.7414e-04                1.2125e-04
+                                   b_tt_pt_shopping         b_tt_car_business
+asc_b                                     4.609e-06                 7.360e-06
+b_tt_pt_business                          5.480e-06                 1.629e-05
+b_tt_pt_commuters                         1.111e-05                 2.008e-05
+b_tt_pt_leisure                           3.922e-06                 7.193e-06
+b_tt_pt_shopping                          2.280e-05                 1.560e-05
+b_tt_car_business                         1.560e-05                 3.967e-05
+b_tt_car_commuters                        1.727e-05                 3.181e-05
+b_tt_car_leisure                          8.602e-06                 1.638e-05
+b_tt_car_shopping                         3.561e-05                 3.164e-05
+b_dc                                       0.001734                  0.003112
+b_car_inertia                           -9.3153e-04                 -0.001704
+b_bus_disc                               -6.064e-06                -6.563e-06
+b_rail_disc                             -3.7043e-04               -6.5286e-04
+lam_dist_tt_pt_business                 -1.0577e-04               -2.4141e-04
+lam_dist_tt_pt_commuters                -1.9186e-04               -3.7876e-04
+lam_dist_tt_pt_leisure                   -9.073e-07                -1.434e-06
+lam_dist_tt_pt_shopping                 -5.2299e-04               -5.7624e-04
+lam_dist_tt_car_business                 -5.888e-07                -2.133e-05
+lam_dist_tt_car_commuters               -1.4460e-04               -2.7850e-04
+lam_dist_tt_car_leisure                   2.432e-05                 6.357e-05
+lam_dist_tt_car_shopping                -2.1282e-04               -2.5956e-04
+mu_mc_car_bus                             9.554e-05                1.3144e-04
+mu_mc_car_rail                           9.8824e-04                  0.001786
+mu_rc_bus                                 -0.004150                 -0.006626
+mu_rc_car                                6.1252e-04                  0.001171
+mu_rc_rail_by_car                        1.9177e-04                3.7589e-04
+                                 b_tt_car_commuters          b_tt_car_leisure
+asc_b                                     7.187e-06                 1.611e-06
+b_tt_pt_business                          1.105e-05                 5.380e-06
+b_tt_pt_commuters                         3.297e-05                 1.089e-05
+b_tt_pt_leisure                           8.066e-06                 5.746e-06
+b_tt_pt_shopping                          1.727e-05                 8.602e-06
+b_tt_car_business                         3.181e-05                 1.638e-05
+b_tt_car_commuters                        5.062e-05                 1.807e-05
+b_tt_car_leisure                          1.807e-05                 1.338e-05
+b_tt_car_shopping                         3.489e-05                 1.840e-05
+b_dc                                       0.003389                  0.001663
+b_car_inertia                             -0.001886               -9.7143e-04
+b_bus_disc                               -3.176e-06                 7.553e-06
+b_rail_disc                             -7.3342e-04               -3.4047e-04
+lam_dist_tt_pt_business                 -2.1703e-04               -1.1753e-04
+lam_dist_tt_pt_commuters                -4.1446e-04               -2.4919e-04
+lam_dist_tt_pt_leisure                   -1.666e-06                -1.257e-05
+lam_dist_tt_pt_shopping                 -6.0180e-04               -3.8456e-04
+lam_dist_tt_car_business                 -6.036e-07                 7.381e-07
+lam_dist_tt_car_commuters               -2.6590e-04               -1.7565e-04
+lam_dist_tt_car_leisure                   6.332e-05                 9.700e-05
+lam_dist_tt_car_shopping                -2.7102e-04               -1.6027e-04
+mu_mc_car_bus                            1.0616e-04                -3.249e-05
+mu_mc_car_rail                             0.001980                9.9069e-04
+mu_rc_bus                                 -0.006471                 -0.001450
+mu_rc_car                                  0.001285                6.6896e-04
+mu_rc_rail_by_car                        5.3069e-04                2.2428e-04
+                                  b_tt_car_shopping                      b_dc
+asc_b                                     5.297e-06                  0.001098
+b_tt_pt_business                          1.060e-05                  0.001131
+b_tt_pt_commuters                         2.152e-05                  0.002232
+b_tt_pt_leisure                           7.709e-06                8.1585e-04
+b_tt_pt_shopping                          3.561e-05                  0.001734
+b_tt_car_business                         3.164e-05                  0.003112
+b_tt_car_commuters                        3.489e-05                  0.003389
+b_tt_car_leisure                          1.840e-05                  0.001663
+b_tt_car_shopping                         6.475e-05                  0.003351
+b_dc                                       0.003351                  0.465307
+b_car_inertia                             -0.001911                 -0.186698
+b_bus_disc                                5.472e-06               -9.6287e-04
+b_rail_disc                             -7.1598e-04                 -0.073681
+lam_dist_tt_pt_business                 -2.2505e-04                 -0.022659
+lam_dist_tt_pt_commuters                -4.5429e-04                 -0.041599
+lam_dist_tt_pt_leisure                   -2.732e-07                -1.822e-05
+lam_dist_tt_pt_shopping                 -8.5620e-04                 -0.064807
+lam_dist_tt_car_business                 -1.031e-06                -1.161e-05
+lam_dist_tt_car_commuters               -3.2865e-04                 -0.031645
+lam_dist_tt_car_leisure                   8.607e-05                  0.004894
+lam_dist_tt_car_shopping                -2.8079e-04                 -0.030214
+mu_mc_car_bus                             2.499e-05                  0.019468
+mu_mc_car_rail                             0.001967                  0.196614
+mu_rc_bus                                 -0.004769                 -0.988196
+mu_rc_car                                  0.001231                  0.127445
+mu_rc_rail_by_car                        3.7238e-04                  0.039815
+                                      b_car_inertia                b_bus_disc
+asc_b                                   -5.7663e-04                8.9110e-04
+b_tt_pt_business                        -5.7756e-04                -8.889e-06
+b_tt_pt_commuters                         -0.001178                -1.824e-05
+b_tt_pt_leisure                         -4.1766e-04                -4.837e-06
+b_tt_pt_shopping                        -9.3153e-04                -6.064e-06
+b_tt_car_business                         -0.001704                -6.563e-06
+b_tt_car_commuters                        -0.001886                -3.176e-06
+b_tt_car_leisure                        -9.7143e-04                 7.553e-06
+b_tt_car_shopping                         -0.001911                 5.472e-06
+b_dc                                      -0.186698               -9.6287e-04
+b_car_inertia                              0.103501                  0.001035
+b_bus_disc                                 0.001035                  0.008788
+b_rail_disc                                0.040140                2.0533e-04
+lam_dist_tt_pt_business                    0.012027               -1.3029e-04
+lam_dist_tt_pt_commuters                   0.023488               -6.2232e-04
+lam_dist_tt_pt_leisure                    2.027e-05                 1.151e-05
+lam_dist_tt_pt_shopping                    0.037121                 -0.001233
+lam_dist_tt_car_business                  4.533e-05                -5.968e-07
+lam_dist_tt_car_commuters                  0.017185               -2.0929e-04
+lam_dist_tt_car_leisure                   -0.003998                4.4993e-04
+lam_dist_tt_car_shopping                   0.016743               -2.4035e-04
+mu_mc_car_bus                             -0.013835                 -0.091185
+mu_mc_car_rail                            -0.107214               -9.1943e-04
+mu_rc_bus                                  0.519183                 -0.802306
+mu_rc_car                                 -0.064183               -9.3245e-04
+mu_rc_rail_by_car                         -0.020408                 -0.001050
+                                        b_rail_disc   lam_dist_tt_pt_business
+asc_b                                   -1.8489e-04                -1.642e-05
+b_tt_pt_business                        -2.3629e-04                 8.291e-06
+b_tt_pt_commuters                       -4.8793e-04               -1.3103e-04
+b_tt_pt_leisure                         -1.6637e-04                -4.805e-05
+b_tt_pt_shopping                        -3.7043e-04               -1.0577e-04
+b_tt_car_business                       -6.5286e-04               -2.4141e-04
+b_tt_car_commuters                      -7.3342e-04               -2.1703e-04
+b_tt_car_leisure                        -3.4047e-04               -1.1753e-04
+b_tt_car_shopping                       -7.1598e-04               -2.2505e-04
+b_dc                                      -0.073681                 -0.022659
+b_car_inertia                              0.040140                  0.012027
+b_bus_disc                               2.0533e-04               -1.3029e-04
+b_rail_disc                                0.017733                  0.004250
+lam_dist_tt_pt_business                    0.004250                  0.005604
+lam_dist_tt_pt_commuters                   0.007026                  0.003166
+lam_dist_tt_pt_leisure                    3.837e-05                -2.085e-05
+lam_dist_tt_pt_shopping                    0.010725                  0.005085
+lam_dist_tt_car_business                  1.672e-05               -6.1305e-04
+lam_dist_tt_car_commuters                  0.005534                  0.002249
+lam_dist_tt_car_leisure                 -3.2394e-04               -6.5697e-04
+lam_dist_tt_car_shopping                   0.005418                  0.002163
+mu_mc_car_bus                             -0.003574                6.9982e-04
+mu_mc_car_rail                            -0.042360                 -0.012168
+mu_rc_bus                                  0.166468                  0.014786
+mu_rc_car                                 -0.024731                 -0.007778
+mu_rc_rail_by_car                         -0.008831                 -0.002340
+                           lam_dist_tt_pt_commuters    lam_dist_tt_pt_leisure
+asc_b                                     5.071e-05                -2.625e-06
+b_tt_pt_business                        -1.1105e-04                -9.668e-07
+b_tt_pt_commuters                       -2.2897e-04                -1.853e-06
+b_tt_pt_leisure                          -8.367e-05                -1.050e-05
+b_tt_pt_shopping                        -1.9186e-04                -9.073e-07
+b_tt_car_business                       -3.7876e-04                -1.434e-06
+b_tt_car_commuters                      -4.1446e-04                -1.666e-06
+b_tt_car_leisure                        -2.4919e-04                -1.257e-05
+b_tt_car_shopping                       -4.5429e-04                -2.732e-07
+b_dc                                      -0.041599                -1.822e-05
+b_car_inertia                              0.023488                 2.027e-05
+b_bus_disc                              -6.2232e-04                 1.151e-05
+b_rail_disc                                0.007026                 3.837e-05
+lam_dist_tt_pt_business                    0.003166                -2.085e-05
+lam_dist_tt_pt_commuters                   0.030998                -6.334e-05
+lam_dist_tt_pt_leisure                   -6.334e-05               -7.3111e-04
+lam_dist_tt_pt_shopping                    0.013238                -4.902e-05
+lam_dist_tt_car_business                  1.290e-05                -1.601e-05
+lam_dist_tt_car_commuters                  0.024368                -3.832e-05
+lam_dist_tt_car_leisure                   -0.002349               -5.4101e-04
+lam_dist_tt_car_shopping                   0.005147                 2.525e-06
+mu_mc_car_bus                              0.004839               -1.0529e-04
+mu_mc_car_rail                            -0.022170                -8.182e-05
+mu_rc_bus                                 -0.045656                  0.002365
+mu_rc_car                                 -0.015514                -3.848e-05
+mu_rc_rail_by_car                       -7.7880e-04               -1.3916e-04
+                            lam_dist_tt_pt_shopping  lam_dist_tt_car_business
+asc_b                                    1.3448e-04                -1.132e-07
+b_tt_pt_business                        -1.6027e-04                -1.047e-05
+b_tt_pt_commuters                       -3.1202e-04                -2.799e-07
+b_tt_pt_leisure                         -1.2125e-04                -5.492e-08
+b_tt_pt_shopping                        -5.2299e-04                -5.888e-07
+b_tt_car_business                       -5.7624e-04                -2.133e-05
+b_tt_car_commuters                      -6.0180e-04                -6.036e-07
+b_tt_car_leisure                        -3.8456e-04                 7.381e-07
+b_tt_car_shopping                       -8.5620e-04                -1.031e-06
+b_dc                                      -0.064807                -1.161e-05
+b_car_inertia                              0.037121                 4.533e-05
+b_bus_disc                                -0.001233                -5.968e-07
+b_rail_disc                                0.010725                 1.672e-05
+lam_dist_tt_pt_business                    0.005085               -6.1305e-04
+lam_dist_tt_pt_commuters                   0.013238                 1.290e-05
+lam_dist_tt_pt_leisure                   -4.902e-05                -1.601e-05
+lam_dist_tt_pt_shopping                    0.112152                1.0337e-04
+lam_dist_tt_car_business                 1.0337e-04               -6.6237e-04
+lam_dist_tt_car_commuters                  0.008993                 9.279e-06
+lam_dist_tt_car_leisure                   -0.003812                 3.845e-05
+lam_dist_tt_car_shopping                   0.066537                 5.876e-05
+mu_mc_car_bus                              0.009988                 7.823e-06
+mu_mc_car_rail                            -0.034870                -4.498e-05
+mu_rc_bus                                 -0.121081                1.0185e-04
+mu_rc_car                                 -0.019423                -3.397e-06
+mu_rc_rail_by_car                       -4.6611e-04                 2.172e-05
+                          lam_dist_tt_car_commuters   lam_dist_tt_car_leisure
+asc_b                                    -1.691e-05                -8.523e-05
+b_tt_pt_business                         -8.518e-05                 1.120e-05
+b_tt_pt_commuters                       -1.6425e-04                 1.949e-05
+b_tt_pt_leisure                          -6.282e-05                 1.176e-05
+b_tt_pt_shopping                        -1.4460e-04                 2.432e-05
+b_tt_car_business                       -2.7850e-04                 6.357e-05
+b_tt_car_commuters                      -2.6590e-04                 6.332e-05
+b_tt_car_leisure                        -1.7565e-04                 9.700e-05
+b_tt_car_shopping                       -3.2865e-04                 8.607e-05
+b_dc                                      -0.031645                  0.004894
+b_car_inertia                              0.017185                 -0.003998
+b_bus_disc                              -2.0929e-04                4.4993e-04
+b_rail_disc                                0.005534               -3.2394e-04
+lam_dist_tt_pt_business                    0.002249               -6.5697e-04
+lam_dist_tt_pt_commuters                   0.024368                 -0.002349
+lam_dist_tt_pt_leisure                   -3.832e-05               -5.4101e-04
+lam_dist_tt_pt_shopping                    0.008993                 -0.003812
+lam_dist_tt_car_business                  9.279e-06                 3.845e-05
+lam_dist_tt_car_commuters                  0.020770                 -0.001452
+lam_dist_tt_car_leisure                   -0.001452                  0.002451
+lam_dist_tt_car_shopping                   0.003624                 -0.001230
+mu_mc_car_bus                              0.001228                 -0.004067
+mu_mc_car_rail                            -0.016625                  0.003002
+mu_rc_bus                                  0.015231                  0.076736
+mu_rc_car                                 -0.011351                  0.002524
+mu_rc_rail_by_car                       -3.6633e-04                2.2723e-04
+                           lam_dist_tt_car_shopping             mu_mc_car_bus
+asc_b                                    -7.612e-06                 -0.008251
+b_tt_pt_business                         -7.696e-05                1.0818e-04
+b_tt_pt_commuters                       -1.5073e-04                2.1991e-04
+b_tt_pt_leisure                          -5.564e-05                 6.341e-05
+b_tt_pt_shopping                        -2.1282e-04                 9.554e-05
+b_tt_car_business                       -2.5956e-04                1.3144e-04
+b_tt_car_commuters                      -2.7102e-04                1.0616e-04
+b_tt_car_leisure                        -1.6027e-04                -3.249e-05
+b_tt_car_shopping                       -2.8079e-04                 2.499e-05
+b_dc                                      -0.030214                  0.019468
+b_car_inertia                              0.016743                 -0.013835
+b_bus_disc                              -2.4035e-04                 -0.091185
+b_rail_disc                                0.005418                 -0.003574
+lam_dist_tt_pt_business                    0.002163                6.9982e-04
+lam_dist_tt_pt_commuters                   0.005147                  0.004839
+lam_dist_tt_pt_leisure                    2.525e-06               -1.0529e-04
+lam_dist_tt_pt_shopping                    0.066537                  0.009988
+lam_dist_tt_car_business                  5.876e-05                 7.823e-06
+lam_dist_tt_car_commuters                  0.003624                  0.001228
+lam_dist_tt_car_leisure                   -0.001230                 -0.004067
+lam_dist_tt_car_shopping                   0.047641                  0.001548
+mu_mc_car_bus                              0.001548                  1.169996
+mu_mc_car_rail                            -0.016579                  0.012987
+mu_rc_bus                                  0.006853                  7.428732
+mu_rc_car                                 -0.007668                  0.011543
+mu_rc_rail_by_car                        3.3529e-04                  0.010656
+                                     mu_mc_car_rail                 mu_rc_bus
+asc_b                                    5.7144e-04                  0.166675
+b_tt_pt_business                         6.2137e-04                 -0.003637
+b_tt_pt_commuters                          0.001267                 -0.007317
+b_tt_pt_leisure                          4.4549e-04                 -0.002326
+b_tt_pt_shopping                         9.8824e-04                 -0.004150
+b_tt_car_business                          0.001786                 -0.006626
+b_tt_car_commuters                         0.001980                 -0.006471
+b_tt_car_leisure                         9.9069e-04                 -0.001450
+b_tt_car_shopping                          0.001967                 -0.004769
+b_dc                                       0.196614                 -0.988196
+b_car_inertia                             -0.107214                  0.519183
+b_bus_disc                              -9.1943e-04                 -0.802306
+b_rail_disc                               -0.042360                  0.166468
+lam_dist_tt_pt_business                   -0.012168                  0.014786
+lam_dist_tt_pt_commuters                  -0.022170                 -0.045656
+lam_dist_tt_pt_leisure                   -8.182e-05                  0.002365
+lam_dist_tt_pt_shopping                   -0.034870                 -0.121081
+lam_dist_tt_car_business                 -4.498e-05                1.0185e-04
+lam_dist_tt_car_commuters                 -0.016625                  0.015231
+lam_dist_tt_car_leisure                    0.003002                  0.076736
+lam_dist_tt_car_shopping                  -0.016579                  0.006853
+mu_mc_car_bus                              0.012987                  7.428732
+mu_mc_car_rail                             0.113596                 -0.514501
+mu_rc_bus                                 -0.514501                -39.396109
+mu_rc_car                                  0.067283                 -0.397165
+mu_rc_rail_by_car                          0.022452                 -0.267652
+                                          mu_rc_car         mu_rc_rail_by_car
+asc_b                                    4.4111e-04                2.9727e-04
+b_tt_pt_business                         4.2818e-04                1.4342e-04
+b_tt_pt_commuters                        8.2140e-04                3.7414e-04
+b_tt_pt_leisure                          3.1231e-04                1.2125e-04
+b_tt_pt_shopping                         6.1252e-04                1.9177e-04
+b_tt_car_business                          0.001171                3.7589e-04
+b_tt_car_commuters                         0.001285                5.3069e-04
+b_tt_car_leisure                         6.6896e-04                2.2428e-04
+b_tt_car_shopping                          0.001231                3.7238e-04
+b_dc                                       0.127445                  0.039815
+b_car_inertia                             -0.064183                 -0.020408
+b_bus_disc                              -9.3245e-04                 -0.001050
+b_rail_disc                               -0.024731                 -0.008831
+lam_dist_tt_pt_business                   -0.007778                 -0.002340
+lam_dist_tt_pt_commuters                  -0.015514               -7.7880e-04
+lam_dist_tt_pt_leisure                   -3.848e-05               -1.3916e-04
+lam_dist_tt_pt_shopping                   -0.019423               -4.6611e-04
+lam_dist_tt_car_business                 -3.397e-06                 2.172e-05
+lam_dist_tt_car_commuters                 -0.011351               -3.6633e-04
+lam_dist_tt_car_leisure                    0.002524                2.2723e-04
+lam_dist_tt_car_shopping                  -0.007668                3.3529e-04
+mu_mc_car_bus                              0.011543                  0.010656
+mu_mc_car_rail                             0.067283                  0.022452
+mu_rc_bus                                 -0.397165                 -0.267652
+mu_rc_car                                  0.067153                  0.015029
+mu_rc_rail_by_car                          0.015029                  0.031287
 
 Robust covariance matrix:
-                              asc_b     b_car_inertia
-asc_b                       0.02523          0.122830
-b_car_inertia               0.12283          0.598514
-b_bus_disc               7.2815e-04          0.003548
-b_rail_disc                 0.05213          0.254136
-mu_mc_car_bus             -31.72246       -154.440314
-mu_mc_car_rail            -22.81041       -111.163660
-mu_rc_bus                   0.48192          2.346346
-mu_rc_car                   2.92873         14.257689
-mu_rc_rail_by_car           1.75476          8.541950
-                         b_bus_disc       b_rail_disc
-asc_b                    7.2815e-04          0.052134
-b_car_inertia              0.003548          0.254136
-b_bus_disc               1.2344e-04          0.001507
-b_rail_disc                0.001507          0.107946
-mu_mc_car_bus             -0.992859        -65.551401
-mu_mc_car_rail            -0.659016        -47.204256
-mu_rc_bus                  0.013678          0.995928
-mu_rc_car                  0.084533          6.051695
-mu_rc_rail_by_car          0.050608          3.625633
-                      mu_mc_car_bus    mu_mc_car_rail
-asc_b                      -31.7225          -22.8104
-b_car_inertia             -154.4403         -111.1637
-b_bus_disc                  -0.9929           -0.6590
-b_rail_disc                -65.5514          -47.2043
-mu_mc_car_bus             3.998e+04         2.868e+04
-mu_mc_car_rail            2.868e+04         2.065e+04
-mu_rc_bus                 -603.0295         -435.7370
-mu_rc_car                -3682.3780        -2647.8380
-mu_rc_rail_by_car        -2206.2771        -1586.4077
-                          mu_rc_bus         mu_rc_car
-asc_b                       0.48192           2.92873
-b_car_inertia               2.34635          14.25769
-b_bus_disc                  0.01368           0.08453
-b_rail_disc                 0.99593           6.05170
-mu_mc_car_bus            -603.02947       -3682.37799
-mu_mc_car_rail           -435.73703       -2647.83805
-mu_rc_bus                  15.74705          55.94249
-mu_rc_car                  55.94249         344.13953
-mu_rc_rail_by_car          33.51630         203.69383
-                  mu_rc_rail_by_car
-asc_b                       1.75476
-b_car_inertia               8.54195
-b_bus_disc                  0.05061
-b_rail_disc                 3.62563
-mu_mc_car_bus           -2206.27707
-mu_mc_car_rail          -1586.40766
-mu_rc_bus                  33.51630
-mu_rc_car                 203.69383
-mu_rc_rail_by_car         125.52398
+                                              asc_b          b_tt_pt_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                  b_tt_pt_commuters           b_tt_pt_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                   b_tt_pt_shopping         b_tt_car_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                 b_tt_car_commuters          b_tt_car_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                  b_tt_car_shopping                      b_dc
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                      b_car_inertia                b_bus_disc
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                        b_rail_disc   lam_dist_tt_pt_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                           lam_dist_tt_pt_commuters    lam_dist_tt_pt_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                            lam_dist_tt_pt_shopping  lam_dist_tt_car_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                          lam_dist_tt_car_commuters   lam_dist_tt_car_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                           lam_dist_tt_car_shopping             mu_mc_car_bus
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                     mu_mc_car_rail                 mu_rc_bus
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                          mu_rc_car         mu_rc_rail_by_car
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
 
 Classical correlation matrix:
-                              asc_b     b_car_inertia
-asc_b                        1.0000            0.9993
-b_car_inertia                0.9993            1.0000
-b_bus_disc                   0.3610            0.3607
-b_rail_disc                  0.9983            0.9997
-mu_mc_car_bus               -0.9975           -0.9968
-mu_mc_car_rail              -0.9990           -1.0000
-mu_rc_bus                    0.5002            0.4998
-mu_rc_car                    0.9826            0.9818
-mu_rc_rail_by_car            0.9381            0.9374
-                         b_bus_disc       b_rail_disc
-asc_b                        0.3610            0.9983
-b_car_inertia                0.3607            0.9997
-b_bus_disc                   1.0000            0.3604
-b_rail_disc                  0.3604            1.0000
-mu_mc_car_bus               -0.4117           -0.9958
-mu_mc_car_rail              -0.3606           -0.9998
-mu_rc_bus                    0.1806            0.4993
-mu_rc_car                    0.3547            0.9809
-mu_rc_rail_by_car            0.3386            0.9365
-                      mu_mc_car_bus    mu_mc_car_rail
-asc_b                       -0.9975           -0.9990
-b_car_inertia               -0.9968           -1.0000
-b_bus_disc                  -0.4117           -0.3606
-b_rail_disc                 -0.9958           -0.9998
-mu_mc_car_bus                1.0000            0.9965
-mu_mc_car_rail               0.9965            1.0000
-mu_rc_bus                   -0.4989           -0.4997
-mu_rc_car                   -0.9801           -0.9816
-mu_rc_rail_by_car           -0.9358           -0.9372
-                          mu_rc_bus         mu_rc_car
-asc_b                        0.5002            0.9826
-b_car_inertia                0.4998            0.9818
-b_bus_disc                   0.1806            0.3547
-b_rail_disc                  0.4993            0.9809
-mu_mc_car_bus               -0.4989           -0.9801
-mu_mc_car_rail              -0.4997           -0.9816
-mu_rc_bus                    1.0000            0.4915
-mu_rc_car                    0.4915            1.0000
-mu_rc_rail_by_car            0.4692            0.9218
-                  mu_rc_rail_by_car
-asc_b                        0.9381
-b_car_inertia                0.9374
-b_bus_disc                   0.3386
-b_rail_disc                  0.9365
-mu_mc_car_bus               -0.9358
-mu_mc_car_rail              -0.9372
-mu_rc_bus                    0.4692
-mu_rc_car                    0.9218
-mu_rc_rail_by_car            1.0000
+                                              asc_b          b_tt_pt_business
+asc_b                                           NaN                       NaN
+b_tt_pt_business                                NaN                   1.00000
+b_tt_pt_commuters                               NaN                   0.48213
+b_tt_pt_leisure                                 NaN                   0.46727
+b_tt_pt_shopping                                NaN                   0.36730
+b_tt_car_business                               NaN                   0.82751
+b_tt_car_commuters                              NaN                   0.49709
+b_tt_car_leisure                                NaN                   0.47062
+b_tt_car_shopping                               NaN                   0.42146
+b_dc                                            NaN                   0.53054
+b_car_inertia                                   NaN                  -0.57451
+b_bus_disc                                      NaN                  -0.03034
+b_rail_disc                                     NaN                  -0.56785
+lam_dist_tt_pt_business                         NaN                   0.03544
+lam_dist_tt_pt_commuters                        NaN                  -0.20184
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                         NaN                  -0.15315
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                       NaN                  -0.18915
+lam_dist_tt_car_leisure                         NaN                   0.07238
+lam_dist_tt_car_shopping                        NaN                  -0.11283
+mu_mc_car_bus                                   NaN                   0.03200
+mu_mc_car_rail                                  NaN                   0.58998
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                       NaN                   0.52877
+mu_rc_rail_by_car                               NaN                   0.25947
+                                  b_tt_pt_commuters           b_tt_pt_leisure
+asc_b                                           NaN                       NaN
+b_tt_pt_business                            0.48213                   0.46727
+b_tt_pt_commuters                           1.00000                   0.61487
+b_tt_pt_leisure                             0.61487                   1.00000
+b_tt_pt_shopping                            0.48171                   0.46387
+b_tt_car_business                           0.66035                   0.64500
+b_tt_car_commuters                          0.95961                   0.64024
+b_tt_car_leisure                            0.61670                   0.88698
+b_tt_car_shopping                           0.55382                   0.54102
+b_dc                                        0.67776                   0.67546
+b_car_inertia                              -0.75844                  -0.73317
+b_bus_disc                                 -0.04030                  -0.02914
+b_rail_disc                                -0.75884                  -0.70557
+lam_dist_tt_pt_business                    -0.36248                  -0.36248
+lam_dist_tt_pt_commuters                   -0.26933                  -0.26837
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                    -0.19296                  -0.20447
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                  -0.23603                  -0.24618
+lam_dist_tt_car_leisure                     0.08154                   0.13420
+lam_dist_tt_car_shopping                   -0.14302                  -0.14396
+mu_mc_car_bus                               0.04210                   0.03311
+mu_mc_car_rail                              0.77842                   0.74648
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                   0.65645                   0.68064
+mu_rc_rail_by_car                           0.43805                   0.38713
+                                   b_tt_pt_shopping         b_tt_car_business
+asc_b                                           NaN                       NaN
+b_tt_pt_business                            0.36730                   0.82751
+b_tt_pt_commuters                           0.48171                   0.66035
+b_tt_pt_leisure                             0.46387                   0.64500
+b_tt_pt_shopping                            1.00000                   0.51881
+b_tt_car_business                           0.51881                   1.00000
+b_tt_car_commuters                          0.50822                   0.70988
+b_tt_car_leisure                            0.49244                   0.71088
+b_tt_car_shopping                           0.92686                   0.62418
+b_dc                                        0.53232                   0.72436
+b_car_inertia                              -0.60641                  -0.84089
+b_bus_disc                                 -0.01355                  -0.01112
+b_rail_disc                                -0.58258                  -0.77839
+lam_dist_tt_pt_business                    -0.29590                  -0.51199
+lam_dist_tt_pt_commuters                   -0.22822                  -0.34156
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                    -0.32706                  -0.27319
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                  -0.21013                  -0.30681
+lam_dist_tt_car_leisure                     0.10286                   0.20385
+lam_dist_tt_car_shopping                   -0.20420                  -0.18881
+mu_mc_car_bus                               0.01850                   0.01929
+mu_mc_car_rail                              0.61407                   0.84145
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                   0.49502                   0.71756
+mu_rc_rail_by_car                           0.22706                   0.33740
+                                 b_tt_car_commuters          b_tt_car_leisure
+asc_b                                           NaN                       NaN
+b_tt_pt_business                           0.497091                  0.470623
+b_tt_pt_commuters                          0.959606                  0.616703
+b_tt_pt_leisure                            0.640242                  0.886978
+b_tt_pt_shopping                           0.508218                  0.492436
+b_tt_car_business                          0.709881                  0.710878
+b_tt_car_commuters                         1.000000                  0.694418
+b_tt_car_leisure                           0.694418                  1.000000
+b_tt_car_shopping                          0.609438                  0.625065
+b_dc                                       0.698272                  0.666548
+b_car_inertia                             -0.823854                 -0.825400
+b_bus_disc                                -0.004761                  0.022025
+b_rail_disc                               -0.774094                 -0.698897
+lam_dist_tt_pt_business                   -0.407473                 -0.429153
+lam_dist_tt_pt_commuters                  -0.330862                 -0.386892
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                   -0.252570                 -0.313893
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                 -0.259316                 -0.333156
+lam_dist_tt_car_leisure                    0.179759                  0.535547
+lam_dist_tt_car_shopping                  -0.174517                 -0.200721
+mu_mc_car_bus                              0.013794                 -0.008212
+mu_mc_car_rail                             0.825623                  0.803487
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                  0.696828                  0.705656
+mu_rc_rail_by_car                          0.421686                  0.346603
+                                  b_tt_car_shopping                      b_dc
+asc_b                                           NaN                       NaN
+b_tt_pt_business                           0.421457                   0.53054
+b_tt_pt_commuters                          0.553818                   0.67776
+b_tt_pt_leisure                            0.541024                   0.67546
+b_tt_pt_shopping                           0.926857                   0.53232
+b_tt_car_business                          0.624184                   0.72436
+b_tt_car_commuters                         0.609438                   0.69827
+b_tt_car_leisure                           0.625065                   0.66655
+b_tt_car_shopping                          1.000000                   0.61046
+b_dc                                       0.610458                   1.00000
+b_car_inertia                             -0.738343                  -0.85074
+b_bus_disc                                 0.007253                  -0.01506
+b_rail_disc                               -0.668173                  -0.81115
+lam_dist_tt_pt_business                   -0.373593                  -0.44372
+lam_dist_tt_pt_commuters                  -0.320653                  -0.34637
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                   -0.317722                  -0.28370
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                 -0.283391                  -0.32189
+lam_dist_tt_car_leisure                    0.216041                   0.14490
+lam_dist_tt_car_shopping                  -0.159867                  -0.20293
+mu_mc_car_bus                              0.002871                   0.02638
+mu_mc_car_rail                             0.725334                   0.85519
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                  0.590422                   0.72097
+mu_rc_rail_by_car                          0.261626                   0.32998
+                                      b_car_inertia                b_bus_disc
+asc_b                                           NaN                       NaN
+b_tt_pt_business                           -0.57451                 -0.030344
+b_tt_pt_commuters                          -0.75844                 -0.040297
+b_tt_pt_leisure                            -0.73317                 -0.029142
+b_tt_pt_shopping                           -0.60641                 -0.013546
+b_tt_car_business                          -0.84089                 -0.011116
+b_tt_car_commuters                         -0.82385                 -0.004761
+b_tt_car_leisure                           -0.82540                  0.022025
+b_tt_car_shopping                          -0.73834                  0.007253
+b_dc                                       -0.85074                 -0.015057
+b_car_inertia                               1.00000                  0.034314
+b_bus_disc                                  0.03431                  1.000000
+b_rail_disc                                 0.93696                  0.016448
+lam_dist_tt_pt_business                     0.49939                 -0.018565
+lam_dist_tt_pt_commuters                    0.41468                 -0.037704
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                     0.34454                 -0.039286
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                   0.37064                 -0.015491
+lam_dist_tt_car_leisure                    -0.25099                  0.096940
+lam_dist_tt_car_shopping                    0.23843                 -0.011746
+mu_mc_car_bus                              -0.03976                 -0.899239
+mu_mc_car_rail                             -0.98878                 -0.029099
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                  -0.76987                 -0.038383
+mu_rc_rail_by_car                          -0.35863                 -0.063343
+                                        b_rail_disc   lam_dist_tt_pt_business
+asc_b                                           NaN                       NaN
+b_tt_pt_business                           -0.56785                  0.035444
+b_tt_pt_commuters                          -0.75884                 -0.362477
+b_tt_pt_leisure                            -0.70557                 -0.362481
+b_tt_pt_shopping                           -0.58258                 -0.295904
+b_tt_car_business                          -0.77839                 -0.511988
+b_tt_car_commuters                         -0.77409                 -0.407473
+b_tt_car_leisure                           -0.69890                 -0.429153
+b_tt_car_shopping                          -0.66817                 -0.373593
+b_dc                                       -0.81115                 -0.443721
+b_car_inertia                               0.93696                  0.499385
+b_bus_disc                                  0.01645                 -0.018565
+b_rail_disc                                 1.00000                  0.426282
+lam_dist_tt_pt_business                     0.42628                  1.000000
+lam_dist_tt_pt_commuters                    0.29969                  0.240204
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                     0.24050                  0.202822
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                   0.28834                  0.208440
+lam_dist_tt_car_leisure                    -0.04913                 -0.177255
+lam_dist_tt_car_shopping                    0.18641                  0.132381
+mu_mc_car_bus                              -0.02481                  0.008642
+mu_mc_car_rail                             -0.94381                 -0.482253
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                  -0.71668                 -0.400958
+mu_rc_rail_by_car                          -0.37490                 -0.176723
+                           lam_dist_tt_pt_commuters    lam_dist_tt_pt_leisure
+asc_b                                           NaN                       NaN
+b_tt_pt_business                           -0.20184                       NaN
+b_tt_pt_commuters                          -0.26933                       NaN
+b_tt_pt_leisure                            -0.26837                       NaN
+b_tt_pt_shopping                           -0.22822                       NaN
+b_tt_car_business                          -0.34156                       NaN
+b_tt_car_commuters                         -0.33086                       NaN
+b_tt_car_leisure                           -0.38689                       NaN
+b_tt_car_shopping                          -0.32065                       NaN
+b_dc                                       -0.34637                       NaN
+b_car_inertia                               0.41468                       NaN
+b_bus_disc                                 -0.03770                       NaN
+b_rail_disc                                 0.29969                       NaN
+lam_dist_tt_pt_business                     0.24020                       NaN
+lam_dist_tt_pt_commuters                    1.00000                       NaN
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                     0.22452                       NaN
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                   0.96036                       NaN
+lam_dist_tt_car_leisure                    -0.26949                       NaN
+lam_dist_tt_car_shopping                    0.13392                       NaN
+mu_mc_car_bus                               0.02541                       NaN
+mu_mc_car_rail                             -0.37361                       NaN
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                  -0.34003                       NaN
+mu_rc_rail_by_car                          -0.02501                       NaN
+                            lam_dist_tt_pt_shopping  lam_dist_tt_car_business
+asc_b                                           NaN                       NaN
+b_tt_pt_business                          -0.153146                       NaN
+b_tt_pt_commuters                         -0.192957                       NaN
+b_tt_pt_leisure                           -0.204472                       NaN
+b_tt_pt_shopping                          -0.327061                       NaN
+b_tt_car_business                         -0.273190                       NaN
+b_tt_car_commuters                        -0.252570                       NaN
+b_tt_car_leisure                          -0.313893                       NaN
+b_tt_car_shopping                         -0.317722                       NaN
+b_dc                                      -0.283695                       NaN
+b_car_inertia                              0.344540                       NaN
+b_bus_disc                                -0.039286                       NaN
+b_rail_disc                                0.240503                       NaN
+lam_dist_tt_pt_business                    0.202822                       NaN
+lam_dist_tt_pt_commuters                   0.224521                       NaN
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                    1.000000                       NaN
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                  0.186318                       NaN
+lam_dist_tt_car_leisure                   -0.229941                       NaN
+lam_dist_tt_car_shopping                   0.910271                       NaN
+mu_mc_car_bus                              0.027574                       NaN
+mu_mc_car_rail                            -0.308933                       NaN
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                 -0.223810                       NaN
+mu_rc_rail_by_car                         -0.007869                       NaN
+                          lam_dist_tt_car_commuters   lam_dist_tt_car_leisure
+asc_b                                           NaN                       NaN
+b_tt_pt_business                          -0.189151                   0.07238
+b_tt_pt_commuters                         -0.236032                   0.08154
+b_tt_pt_leisure                           -0.246181                   0.13420
+b_tt_pt_shopping                          -0.210134                   0.10286
+b_tt_car_business                         -0.306812                   0.20385
+b_tt_car_commuters                        -0.259316                   0.17976
+b_tt_car_leisure                          -0.333156                   0.53555
+b_tt_car_shopping                         -0.283391                   0.21604
+b_dc                                      -0.321892                   0.14490
+b_car_inertia                              0.370637                  -0.25099
+b_bus_disc                                -0.015491                   0.09694
+b_rail_disc                                0.288344                  -0.04913
+lam_dist_tt_pt_business                    0.208440                  -0.17725
+lam_dist_tt_pt_commuters                   0.960358                  -0.26949
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                    0.186318                  -0.22994
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                  1.000000                  -0.20345
+lam_dist_tt_car_leisure                   -0.203448                   1.00000
+lam_dist_tt_car_shopping                   0.115212                  -0.11386
+mu_mc_car_bus                              0.007877                  -0.07594
+mu_mc_car_rail                            -0.342252                   0.17992
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                 -0.303924                   0.19674
+mu_rc_rail_by_car                         -0.014370                   0.02595
+                           lam_dist_tt_car_shopping             mu_mc_car_bus
+asc_b                                           NaN                       NaN
+b_tt_pt_business                          -0.112829                  0.032004
+b_tt_pt_commuters                         -0.143022                  0.042105
+b_tt_pt_leisure                           -0.143961                  0.033107
+b_tt_pt_shopping                          -0.204205                  0.018498
+b_tt_car_business                         -0.188807                  0.019293
+b_tt_car_commuters                        -0.174517                  0.013794
+b_tt_car_leisure                          -0.200721                 -0.008212
+b_tt_car_shopping                         -0.159867                  0.002871
+b_dc                                      -0.202933                  0.026385
+b_car_inertia                              0.238430                 -0.039756
+b_bus_disc                                -0.011746                 -0.899239
+b_rail_disc                                0.186412                 -0.024811
+lam_dist_tt_pt_business                    0.132381                  0.008642
+lam_dist_tt_pt_commuters                   0.133923                  0.025408
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                    0.910271                  0.027574
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                  0.115212                  0.007877
+lam_dist_tt_car_leisure                   -0.113856                 -0.075936
+lam_dist_tt_car_shopping                   1.000000                  0.006559
+mu_mc_car_bus                              0.006559                  1.000000
+mu_mc_car_rail                            -0.225370                  0.035623
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                 -0.135564                  0.041180
+mu_rc_rail_by_car                          0.008685                  0.055693
+                                     mu_mc_car_rail                 mu_rc_bus
+asc_b                                           NaN                       NaN
+b_tt_pt_business                            0.58998                       NaN
+b_tt_pt_commuters                           0.77842                       NaN
+b_tt_pt_leisure                             0.74648                       NaN
+b_tt_pt_shopping                            0.61407                       NaN
+b_tt_car_business                           0.84145                       NaN
+b_tt_car_commuters                          0.82562                       NaN
+b_tt_car_leisure                            0.80349                       NaN
+b_tt_car_shopping                           0.72533                       NaN
+b_dc                                        0.85519                       NaN
+b_car_inertia                              -0.98878                       NaN
+b_bus_disc                                 -0.02910                       NaN
+b_rail_disc                                -0.94381                       NaN
+lam_dist_tt_pt_business                    -0.48225                       NaN
+lam_dist_tt_pt_commuters                   -0.37361                       NaN
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                    -0.30893                       NaN
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                  -0.34225                       NaN
+lam_dist_tt_car_leisure                     0.17992                       NaN
+lam_dist_tt_car_shopping                   -0.22537                       NaN
+mu_mc_car_bus                               0.03562                       NaN
+mu_mc_car_rail                              1.00000                       NaN
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                   0.77036                       NaN
+mu_rc_rail_by_car                           0.37660                       NaN
+                                          mu_rc_car         mu_rc_rail_by_car
+asc_b                                           NaN                       NaN
+b_tt_pt_business                            0.52877                  0.259470
+b_tt_pt_commuters                           0.65645                  0.438053
+b_tt_pt_leisure                             0.68064                  0.387129
+b_tt_pt_shopping                            0.49502                  0.227063
+b_tt_car_business                           0.71756                  0.337399
+b_tt_car_commuters                          0.69683                  0.421686
+b_tt_car_leisure                            0.70566                  0.346603
+b_tt_car_shopping                           0.59042                  0.261626
+b_dc                                        0.72097                  0.329982
+b_car_inertia                              -0.76987                 -0.358628
+b_bus_disc                                 -0.03838                 -0.063343
+b_rail_disc                                -0.71668                 -0.374902
+lam_dist_tt_pt_business                    -0.40096                 -0.176723
+lam_dist_tt_pt_commuters                   -0.34003                 -0.025008
+lam_dist_tt_pt_leisure                          NaN                       NaN
+lam_dist_tt_pt_shopping                    -0.22381                 -0.007869
+lam_dist_tt_car_business                        NaN                       NaN
+lam_dist_tt_car_commuters                  -0.30392                 -0.014370
+lam_dist_tt_car_leisure                     0.19674                  0.025947
+lam_dist_tt_car_shopping                   -0.13556                  0.008685
+mu_mc_car_bus                               0.04118                  0.055693
+mu_mc_car_rail                              0.77036                  0.376601
+mu_rc_bus                                       NaN                       NaN
+mu_rc_car                                   1.00000                  0.327886
+mu_rc_rail_by_car                           0.32789                  1.000000
 
 Robust correlation matrix:
-                              asc_b     b_car_inertia
-asc_b                        1.0000            0.9996
-b_car_inertia                0.9996            1.0000
-b_bus_disc                   0.4126            0.4128
-b_rail_disc                  0.9990            0.9998
-mu_mc_car_bus               -0.9988           -0.9984
-mu_mc_car_rail              -0.9994           -1.0000
-mu_rc_bus                    0.7646            0.7643
-mu_rc_car                    0.9939            0.9934
-mu_rc_rail_by_car            0.9860            0.9855
-                         b_bus_disc       b_rail_disc
-asc_b                        0.4126            0.9990
-b_car_inertia                0.4128            0.9998
-b_bus_disc                   1.0000            0.4129
-b_rail_disc                  0.4129            1.0000
-mu_mc_car_bus               -0.4469           -0.9978
-mu_mc_car_rail              -0.4128           -0.9999
-mu_rc_bus                    0.3102            0.7639
-mu_rc_car                    0.4101            0.9929
-mu_rc_rail_by_car            0.4066            0.9850
-                      mu_mc_car_bus    mu_mc_car_rail
-asc_b                       -0.9988           -0.9994
-b_car_inertia               -0.9984           -1.0000
-b_bus_disc                  -0.4469           -0.4128
-b_rail_disc                 -0.9978           -0.9999
-mu_mc_car_bus                1.0000            0.9982
-mu_mc_car_rail               0.9982            1.0000
-mu_rc_bus                   -0.7600           -0.7642
-mu_rc_car                   -0.9927           -0.9933
-mu_rc_rail_by_car           -0.9849           -0.9854
-                          mu_rc_bus         mu_rc_car
-asc_b                        0.7646            0.9939
-b_car_inertia                0.7643            0.9934
-b_bus_disc                   0.3102            0.4101
-b_rail_disc                  0.7639            0.9929
-mu_mc_car_bus               -0.7600           -0.9927
-mu_mc_car_rail              -0.7642           -0.9933
-mu_rc_bus                    1.0000            0.7599
-mu_rc_car                    0.7599            1.0000
-mu_rc_rail_by_car            0.7539            0.9800
-                  mu_rc_rail_by_car
-asc_b                        0.9860
-b_car_inertia                0.9855
-b_bus_disc                   0.4066
-b_rail_disc                  0.9850
-mu_mc_car_bus               -0.9849
-mu_mc_car_rail              -0.9854
-mu_rc_bus                    0.7539
-mu_rc_car                    0.9800
-mu_rc_rail_by_car            1.0000
+                                              asc_b          b_tt_pt_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                  b_tt_pt_commuters           b_tt_pt_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                   b_tt_pt_shopping         b_tt_car_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                 b_tt_car_commuters          b_tt_car_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                  b_tt_car_shopping                      b_dc
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                      b_car_inertia                b_bus_disc
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                        b_rail_disc   lam_dist_tt_pt_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                           lam_dist_tt_pt_commuters    lam_dist_tt_pt_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                            lam_dist_tt_pt_shopping  lam_dist_tt_car_business
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                          lam_dist_tt_car_commuters   lam_dist_tt_car_leisure
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                           lam_dist_tt_car_shopping             mu_mc_car_bus
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                     mu_mc_car_rail                 mu_rc_bus
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
+                                          mu_rc_car         mu_rc_rail_by_car
+asc_b                                            NA                        NA
+b_tt_pt_business                                 NA                        NA
+b_tt_pt_commuters                                NA                        NA
+b_tt_pt_leisure                                  NA                        NA
+b_tt_pt_shopping                                 NA                        NA
+b_tt_car_business                                NA                        NA
+b_tt_car_commuters                               NA                        NA
+b_tt_car_leisure                                 NA                        NA
+b_tt_car_shopping                                NA                        NA
+b_dc                                             NA                        NA
+b_car_inertia                                    NA                        NA
+b_bus_disc                                       NA                        NA
+b_rail_disc                                      NA                        NA
+lam_dist_tt_pt_business                          NA                        NA
+lam_dist_tt_pt_commuters                         NA                        NA
+lam_dist_tt_pt_leisure                           NA                        NA
+lam_dist_tt_pt_shopping                          NA                        NA
+lam_dist_tt_car_business                         NA                        NA
+lam_dist_tt_car_commuters                        NA                        NA
+lam_dist_tt_car_leisure                          NA                        NA
+lam_dist_tt_car_shopping                         NA                        NA
+mu_mc_car_bus                                    NA                        NA
+mu_mc_car_rail                                   NA                        NA
+mu_rc_bus                                        NA                        NA
+mu_rc_car                                        NA                        NA
+mu_rc_rail_by_car                                NA                        NA
 
  20 worst outliers in terms of lowest average per choice prediction:
     ID Avg prob per choice
- 18811           0.2444474
- 19031           0.2444474
- 20968           0.2458313
- 80475           0.2821998
- 17155           0.2867626
- 21893           0.2867626
- 19688           0.2900188
- 25199           0.2916607
- 20584           0.2933119
- 82013           0.3238741
- 21846           0.3239814
- 15603           0.3255516
- 18790           0.3260767
- 19470           0.3260767
- 14010           0.3266027
- 17169           0.3271295
- 17502           0.3383073
- 20086           0.3383073
- 14801           0.3402227
- 78780           0.3402227
+ 20968           0.2149989
+ 18811           0.2340179
+ 82013           0.2406065
+ 80475           0.2678950
+ 19688           0.2744504
+ 21893           0.2795389
+ 19031           0.2939699
+ 23989           0.3052169
+ 80287           0.3080360
+ 12948           0.3107995
+ 17155           0.3237101
+ 82483           0.3242081
+ 22309           0.3299614
+ 16184           0.3304644
+ 17480           0.3368161
+ 78780           0.3375407
+ 21044           0.3411965
+ 21846           0.3451226
+ 17227           0.3476801
+ 20838           0.3479094
 
 Changes in parameter estimates from starting values:
-                      Initial    Estimate  Difference
-asc_a                   0.000    0.000000    0.000000
-asc_b                   0.000    0.024175    0.024175
-b_car_inertia           0.000    0.116237    0.116237
-b_bus_disc              0.000    0.001258    0.001258
-b_rail_disc             0.000    0.048957    0.048957
-mu_mc_car_bus           1.000   30.840339   29.840339
-mu_mc_car_rail          1.000   21.546343   20.546343
-mu_rc_bus               1.000   -0.509338   -1.509338
-mu_rc_car               1.000   -2.802318   -3.802318
-mu_rc_rail_by_car       1.000   -1.706092   -2.706092
-mu_rc_rail              1.000    1.000000    0.000000
+                              Initial    Estimate  Difference
+asc_a                           0.000    0.000000    0.000000
+asc_b                           0.000    0.005474    0.005474
+b_tt_pt_business                0.000   -0.016759   -0.016759
+b_tt_pt_commuters               0.000   -0.029957   -0.029957
+b_tt_pt_leisure                 0.000   -0.012154   -0.012154
+b_tt_pt_shopping                0.000   -0.016750   -0.016750
+b_tt_car_business               0.000   -0.029664   -0.029664
+b_tt_car_commuters              0.000   -0.040392   -0.040392
+b_tt_car_leisure                0.000   -0.019063   -0.019063
+b_tt_car_shopping               0.000   -0.028068   -0.028068
+b_dc                            0.000   -2.891381   -2.891381
+b_car_inertia                   0.000    1.398880    1.398880
+b_bus_disc                      0.000    0.241975    0.241975
+b_rail_disc                     0.000    0.649644    0.649644
+lam_dist_tt_pt_business         1.000    0.194384   -0.805616
+lam_dist_tt_pt_commuters        1.000    0.012739   -0.987261
+lam_dist_tt_pt_leisure          1.000   3.518e-07   -1.000000
+lam_dist_tt_pt_shopping         1.000    0.017962   -0.982038
+lam_dist_tt_car_business        1.000   2.497e-07   -1.000000
+lam_dist_tt_car_commuters       1.000    0.126476   -0.873524
+lam_dist_tt_car_leisure         1.000  8.6371e-04   -0.999136
+lam_dist_tt_car_shopping        1.000    0.034475   -0.965525
+mu_mc_car_bus                   1.000    2.879817    1.879817
+mu_mc_car_rail                  1.000    1.584779    0.584779
+mu_rc_bus                       1.000    1.252745    0.252745
+mu_rc_car                       1.000    1.262395    0.262395
+mu_rc_rail_by_car               1.000    0.790161   -0.209839
+mu_rc_rail                      1.000    1.000000    0.000000
 
 Settings and functions used in model definition:
 
@@ -397,33 +1653,67 @@ analyticGrad_manualSet "FALSE"
 
 Hessian routines attempted
 --------------
-numerical jacobian of LL analytical gradient
+numerical second derivative of LL (using numDeriv)
 
 Scaling in estimation
 --------------
-                         Value
-asc_b              0.041584564
-b_car_inertia      0.204812723
-b_bus_disc         0.001287377
-b_rail_disc        0.087103054
-mu_mc_car_bus     18.402759985
-mu_mc_car_rail    12.174016436
-mu_rc_bus          0.313625263
-mu_rc_car          1.620426642
-mu_rc_rail_by_car  1.044358981
+                                 Value
+asc_b                     1.916921e-02
+b_tt_pt_business          5.796669e-03
+b_tt_pt_commuters         3.767073e-02
+b_tt_pt_leisure           1.274847e-02
+b_tt_pt_shopping          1.946936e-02
+b_tt_car_business         1.098830e-02
+b_tt_car_commuters        5.217181e-02
+b_tt_car_leisure          1.934126e-02
+b_tt_car_shopping         3.021429e-02
+b_dc                      2.872146e+00
+b_car_inertia             1.498602e+00
+b_bus_disc                6.413384e-01
+b_rail_disc               7.432244e-01
+lam_dist_tt_pt_business   1.038147e+00
+lam_dist_tt_pt_commuters  2.046973e-02
+lam_dist_tt_pt_leisure    3.518138e-07
+lam_dist_tt_pt_shopping   3.061121e-02
+lam_dist_tt_car_business  7.769039e-01
+lam_dist_tt_car_commuters 1.554941e-01
+lam_dist_tt_car_leisure   8.990529e-04
+lam_dist_tt_car_shopping  5.948823e-02
+mu_mc_car_bus             1.166225e+00
+mu_mc_car_rail            1.445985e+00
+mu_rc_bus                 1.517377e+00
+mu_rc_car                 1.208927e+00
+mu_rc_rail_by_car         8.980831e-01
 
 Scaling used in computing Hessian
 --------------
-                         Value
-asc_b              0.024175094
-b_car_inertia      0.116237206
-b_bus_disc         0.001258401
-b_rail_disc        0.048956562
-mu_mc_car_bus     30.840339050
-mu_mc_car_rail    21.546343275
-mu_rc_bus          0.509338308
-mu_rc_car          2.802317547
-mu_rc_rail_by_car  1.706091949
+                                 Value
+asc_b                     5.474455e-03
+b_tt_pt_business          1.675906e-02
+b_tt_pt_commuters         2.995695e-02
+b_tt_pt_leisure           1.215402e-02
+b_tt_pt_shopping          1.674986e-02
+b_tt_car_business         2.966399e-02
+b_tt_car_commuters        4.039223e-02
+b_tt_car_leisure          1.906252e-02
+b_tt_car_shopping         2.806766e-02
+b_dc                      2.891381e+00
+b_car_inertia             1.398880e+00
+b_bus_disc                2.419755e-01
+b_rail_disc               6.496439e-01
+lam_dist_tt_pt_business   1.943837e-01
+lam_dist_tt_pt_commuters  1.273887e-02
+lam_dist_tt_pt_leisure    3.518136e-07
+lam_dist_tt_pt_shopping   1.796236e-02
+lam_dist_tt_car_business  2.497089e-07
+lam_dist_tt_car_commuters 1.264764e-01
+lam_dist_tt_car_leisure   8.637060e-04
+lam_dist_tt_car_shopping  3.447505e-02
+mu_mc_car_bus             2.879817e+00
+mu_mc_car_rail            1.584779e+00
+mu_rc_bus                 1.252745e+00
+mu_rc_car                 1.262395e+00
+mu_rc_rail_by_car         7.901612e-01
 
 
 apollo_probabilities
@@ -437,20 +1727,20 @@ function(apollo_beta, apollo_inputs, functionality="estimate"){
   ### Create list of probabilities P
   P = list()
   
-  # ### Elasticities
-  # dist = T_DIST_C
-  # dist_pt_elas = # need to multiply by TT_PT
-  #   b_tt_pt_business * PUR_N * (dist/mean(dist))^lam_dist_tt_pt_business +
-  #   b_tt_pt_commuters * PUR_P * (dist/mean(dist))^lam_dist_tt_pt_commuters +
-  #   b_tt_pt_leisure * PUR_T * (dist/mean(dist))^lam_dist_tt_pt_leisure +
-  #   b_tt_pt_shopping * PUR_E * (dist/mean(dist))^lam_dist_tt_pt_shopping
-  # 
-  #  dist_car_elas = # need to multiply by TT_CAR
-  #   b_tt_car_business * PUR_N * (dist/mean(dist))^lam_dist_tt_car_business +
-  #   b_tt_car_commuters * PUR_P * (dist/mean(dist))^lam_dist_tt_car_commuters +
-  #   b_tt_car_leisure * PUR_T * (dist/mean(dist))^lam_dist_tt_car_leisure +
-  #   b_tt_car_shopping * PUR_E * (dist/mean(dist))^lam_dist_tt_car_shopping
-  
+  ### Elasticities
+  dist = T_DIST_C
+  dist_pt_elas = # need to multiply by TT_PT
+    b_tt_pt_business * PUR_N * (dist/mean(dist))^lam_dist_tt_pt_business +
+    b_tt_pt_commuters * PUR_P * (dist/mean(dist))^lam_dist_tt_pt_commuters +
+    b_tt_pt_leisure * PUR_T * (dist/mean(dist))^lam_dist_tt_pt_leisure +
+    b_tt_pt_shopping * PUR_E * (dist/mean(dist))^lam_dist_tt_pt_shopping
+
+   dist_car_elas = # need to multiply by TT_CAR
+    b_tt_car_business * PUR_N * (dist/mean(dist))^lam_dist_tt_car_business +
+    b_tt_car_commuters * PUR_P * (dist/mean(dist))^lam_dist_tt_car_commuters +
+    b_tt_car_leisure * PUR_T * (dist/mean(dist))^lam_dist_tt_car_leisure +
+    b_tt_car_shopping * PUR_E * (dist/mean(dist))^lam_dist_tt_car_shopping
+
   
   ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
   V = list()
@@ -458,8 +1748,8 @@ function(apollo_beta, apollo_inputs, functionality="estimate"){
   V[["bus"]]  = b_bus_disc  * DISCOUNT
   V[["rail"]] = b_rail_disc * DISCOUNT
   
-  V[["a"]]    = asc_a #+ b_dc * DC_A * CAR_A  +  dist_pt_elas * TT_A * PT_A   +  dist_car_elas * TT_A * CAR_A
-  V[["b"]]    = asc_b #+ b_dc * DC_B * CAR_B  +  dist_pt_elas * TT_B * PT_B   +  dist_car_elas * TT_B * CAR_B
+  V[["a"]]    = asc_a + b_dc * DC_A * CAR_A  +  dist_pt_elas * TT_A * PT_A   +  dist_car_elas * TT_A * CAR_A
+  V[["b"]]    = asc_b + b_dc * DC_B * CAR_B  +  dist_pt_elas * TT_B * PT_B   +  dist_car_elas * TT_B * CAR_B
   
   ### Compute probabilities for the RP part of the data using MNL model
   mnl_settings_1 = list(
