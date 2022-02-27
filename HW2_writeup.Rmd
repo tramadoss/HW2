@@ -14,6 +14,7 @@ rm(list = ls())
 
 ```{r echo = FALSE, warning= FALSE, message=FALSE, output = FALSE, results = FALSE}
 source("HW2_script.R")
+library(apollo)
 options(knitr.kable.NA = '')
 ```
 
@@ -34,4 +35,11 @@ t2 %>% knitr::kable(digits = 1)
 ```{r echo = FALSE, warning= FALSE, message=FALSE, output = FALSE}
 t3_counts %>% knitr::kable()
 t3_addl %>% knitr::kable(digits = 2)
+```
+
+### Table 4
+
+```{r echo = FALSE, warning= FALSE, message=FALSE, output = TRUE}
+model <- read_rds("output/Swiss_VOT_model.rds")
+apollo_modelOutput(model)
 ```

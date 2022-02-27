@@ -167,10 +167,12 @@ apollo_probabilities=function(apollo_beta, apollo_inputs, functionality="estimat
    
    inc = HH_INC_A
    tc_elas = 
-     b_tc_business * PUR_N * (inc/mean(inc))^lam_inc_tc_business * (dist/mean(dist))^lam_dist_tc +
-     b_tc_commuters * PUR_P * (inc/mean(inc))^lam_inc_tc_commuters * (dist/mean(dist))^lam_dist_tc +
-     b_tc_leisure * PUR_T * (dist/mean(dist))^lam_dist_tc +
-     b_tc_shopping * PUR_E * (dist/mean(dist))^lam_dist_tc
+     b_tc_business * PUR_N * (inc/mean(inc))^lam_inc_tc_business +
+     b_tc_commuters * PUR_P * (inc/mean(inc))^lam_inc_tc_commuters +
+     b_tc_leisure * PUR_T +
+     b_tc_shopping * PUR_E
+   
+   tc_elas = tc_elas *(dist/mean(dist))^lam_dist_tc 
    
    ic_p =               
      b_ic_business * PUR_N +
