@@ -31,8 +31,9 @@ database = readRDS("swiss_vot_rdata.RDS")
 
 database <- database %>%
   mutate(across(everything(), as.numeric)) %>%
-  mutate(DC_A = replace_na(TT_CON_A/ (TT_CON_A + TT_UNC_A), 0)) %>%
-  mutate(DC_B = replace_na(TT_CON_B/ (TT_CON_B + TT_UNC_B), 0)) %>%
+  #mutate(DC_A = replace_na(TT_CON_A/ (TT_CON_A + TT_UNC_A), 0)) %>%
+  #mutate(DC_B = replace_na(TT_CON_B/ (TT_CON_B + TT_UNC_B), 0)) %>%
+  mutate(T_DIST_C = if_else(T_DIST_C == 0, 1 , T_DIST_C)) %>%
   inner_join(
     tibble(
       N_O_S = 1:6,
@@ -186,25 +187,32 @@ apollo_probabilities=function(apollo_beta, apollo_inputs, functionality="estimat
      b_hw_leisure * PUR_T +
      b_hw_shopping * PUR_E
    
+   car_mc  = b_car_inertia * CAR   + b_car_available * VEH_AVA1 + b_car_male * MALE
+   bus_mc  = b_bus_disc  * DISCOUNT + b_bus_ga  * GA + bus_p
+   rail_mc = b_rail_disc * DISCOUNT + b_rail_ga  * GA + rail_p
+   
+   car_mc = car_mc
+   bus_mc = bus_mc
+   rail_mc= rail_mc
+   
   ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
   V = list()
-  V[["car"]]  = b_car_inertia * CAR   + b_car_available * VEH_AVA1 + b_car_male * MALE
-  V[["bus"]]  = b_bus_disc  * DISCOUNT + b_bus_ga  * GA + bus_p
-  V[["rail"]] = b_rail_disc * DISCOUNT + b_rail_ga  * GA + rail_p
-  
+
   V[["a"]]    = asc_a + b_dc * S_O_C_A * CAR_A  +  tt_pt_elas * TT_A * PT_A  +  
-    tt_car_elas * TT_A * CAR_A + tc_elas * TC_A + (ic_p + hw_p) * PT_A
+    tt_car_elas * TT_A * CAR_A + tc_elas * TC_A + (ic_p + hw_p) * PT_A +
+    car_mc
   
   V[["b"]]    = asc_b + b_dc * S_O_C_B * CAR_B  +  tt_pt_elas * TT_B * PT_B  +  
-    tt_car_elas * TT_B * CAR_B + tc_elas * TC_B + (ic_p + hw_p) * PT_B
+    tt_car_elas * TT_B * CAR_B + tc_elas * TC_B + (ic_p + hw_p) * PT_B +
+    bus_mc + rail_mc
   
   ### Compute probabilities for the RP part of the data using MNL model
   mnl_settings_1 = list(
     alternatives  = c(car=1, bus = 2), 
     avail         = list(car= 1, bus=1), 
     choiceVar     = CHOICE, 
-    utilities     = list(car  = mu_mc_car_bus*(V[["car"]] + V[["a"]]),
-                         bus  = mu_mc_car_bus*(V[["bus"]] + V[["b"]])),
+    utilities     = list(car  = mu_mc_car_bus*V[["a"]],
+                         bus  = mu_mc_car_bus*V[["b"]]),
     rows          = (N_O_S==1)
   )
   
@@ -214,8 +222,8 @@ apollo_probabilities=function(apollo_beta, apollo_inputs, functionality="estimat
     alternatives  = c(car=1, rail = 2), 
     avail         = list(car= 1, rail=1), 
     choiceVar     = CHOICE, 
-    utilities     = list(car  = mu_mc_car_rail*(V[["car"]] + V[["a"]]),
-                         rail = mu_mc_car_rail*(V[["rail"]]+ V[["b"]])),
+    utilities     = list(car  = mu_mc_car_rail*V[["a"]],
+                         rail = mu_mc_car_rail*V[["b"]]),
     rows          = (N_O_S==2)
   )
   
