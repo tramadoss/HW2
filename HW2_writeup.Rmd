@@ -40,6 +40,37 @@ t3_addl %>% knitr::kable(digits = 2)
 ### Table 4
 
 ```{r echo = FALSE, warning= FALSE, message=FALSE, output = TRUE}
-model <- read_rds("output/Swiss_VOT_model.rds")
+model <- read_rds("output/Swiss_VOT_combined_model.rds")
 apollo_modelOutput(model)
 ```
+
+### Model without elasticities
+
+```{r echo = FALSE, warning= FALSE, message=FALSE, output = TRUE}
+model_no_elas <- read_rds("output/Swiss_VOT_no_elas_combined_model.rds")
+apollo_modelOutput(model_no_elas)
+```
+
+### LR Test
+
+```{r echo = FALSE, warning= FALSE, message=FALSE, output = TRUE}
+apollo_lrTest(model_no_elas,model)
+```
+
+### VTTS
+
+In the utility function,
+
+1. The travel time for public transit alternatives by trip purpose $p$ is given by: 
+$$\beta_{TT, PT, p} \cdot TT_{PT} \cdot \frac{dist}{\hat {dist}}^{\lambda_{TT,PT,p}}$$
+2. The travel time for car alternatives by trip purpose $p$ is given by: 
+$$\beta_{TT, Car, p} \cdot TT_{Car} \cdot \frac{dist}{\hat {dist}}^{\lambda_{TT,Car,p}}$$
+2. The travel cost by trip purpose $p$ is given by: 
+
+$$\beta_{TC,p} \cdot TC \cdot \frac{inc}{\hat {inc}}^{\lambda_{TC, p}}$$
+
+Considering VTTS for mean values of income and distance, VTTS for any alternative type and purpose is given by the following formula:
+
+$$ VTTS = \frac{\alpha_{TT}}{\alpha_{TC}} * \frac{60 min}{h}$$
+
+where $\alpha_{TT} = \beta_{TT} \cdot (1)^{\lambda_{TT}}$ and $\alpha_{TC} = \beta_{TC} \cdot (1)^{\lambda_{TC}}$

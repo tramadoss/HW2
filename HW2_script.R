@@ -79,6 +79,7 @@ rownames(t3_counts) <- c("Mode choice: car vs. bus", "Mode choice: car vs. rail"
 t3_avg <- data_test %>% 
   select(T_PUR, HH_INC_A, T_DIST_C) %>%
   mutate(across(everything(), as.numeric)) %>%
+  mutate(T_DIST_C = if_else(T_DIST_C == 0, 1 , T_DIST_C)) %>%
   inner_join(
     tibble(
       T_PUR = 1:4,

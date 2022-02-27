@@ -31,8 +31,7 @@ database = readRDS("swiss_vot_rdata.RDS")
 
 database <- database %>%
   mutate(across(everything(), as.numeric)) %>%
-  mutate(DC_A = replace_na(TT_CON_A/ (TT_CON_A + TT_UNC_A), 0)) %>%
-  mutate(DC_B = replace_na(TT_CON_B/ (TT_CON_B + TT_UNC_B), 0)) %>%
+  mutate(T_DIST_C = if_else(T_DIST_C == 0, 1 , T_DIST_C)) %>%
   inner_join(
     tibble(
       N_O_S = 1:6,

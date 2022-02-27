@@ -1,0 +1,1703 @@
+Model run using Apollo for R, version 0.2.6 on Windows by PHEV 
+www.ApolloChoiceModelling.com
+
+Model name                       : Swiss_VOT_no_elas
+Model description                : Model from Axhausen
+Model run at                     : 2022-02-27 12:19:47
+Estimation method                : bfgs
+Model diagnosis                  : successful convergence 
+Number of individuals            : 1225
+Number of rows in database       : 15870
+Number of modelled outcomes      : 15870
+                               1 : 480
+                               2 : 5784
+                               3 : 1206
+                               4 : 2838
+                               5 : 2061
+                               6 : 3501
+
+Number of cores used             :  4 
+Model without mixing
+
+LL(start)                        : -21004.52
+LL(0, whole model)               : -11000.25
+LL(C, whole model)               : -10657.19
+LL(final, whole model)           : -9182.56
+Rho-square (0)                   :  0.1652 
+Adj.Rho-square (0)               :  0.1615 
+Rho-square (C)                   :  0.1384 
+Adj.Rho-square (C)               :  0.1345 
+AIC                              :  18447.12 
+BIC                              :  18761.68 
+
+LL(0,1)                          : -332.7106
+LL(final,1)                      : -312.5511
+LL(0,2)                          : -4009.163
+LL(final,2)                      : -2382.272
+LL(0,3)                          : -835.9355
+LL(final,3)                      : -801.9935
+LL(0,4)                          : -1967.152
+LL(final,4)                      : -1956.702
+LL(0,5)                          : -1428.576
+LL(final,5)                      : -1409.277
+LL(0,6)                          : -2426.708
+LL(final,6)                      : -2319.763
+
+Estimated parameters             :  41
+Time taken (hh:mm:ss)            :  00:01:18.03 
+     pre-estimation              :  00:00:27.9 
+     estimation                  :  00:00:16.92 
+     post-estimation             :  00:00:33.21 
+Iterations                       :  87  
+
+Unconstrained optimisation.
+
+Estimates:
+                      Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+asc_a                 0.000000          NA          NA          NA            NA
+asc_b                -1.461863          NA          NA          NA            NA
+b_tt_pt_business     -0.088465          NA          NA          NA            NA
+b_tt_pt_commuters    -0.059599          NA          NA          NA            NA
+b_tt_pt_leisure      -0.031610          NA          NA          NA            NA
+b_tt_pt_shopping     -0.031314          NA          NA          NA            NA
+b_tt_car_business    -0.094603          NA          NA          NA            NA
+b_tt_car_commuters   -0.065373          NA          NA          NA            NA
+b_tt_car_leisure     -0.029587          NA          NA          NA            NA
+b_tt_car_shopping    -0.019025          NA          NA          NA            NA
+b_dc                 -0.049248          NA          NA          NA            NA
+b_tc_business        -0.120930          NA          NA          NA            NA
+b_tc_commuters       -0.261493          NA          NA          NA            NA
+b_tc_leisure         -0.104103          NA          NA          NA            NA
+b_tc_shopping        -0.333913          NA          NA          NA            NA
+b_ic_business        -0.665296          NA          NA          NA            NA
+b_ic_commuters       -1.124665          NA          NA          NA            NA
+b_ic_leisure         -0.712959          NA          NA          NA            NA
+b_ic_shopping        -0.920903          NA          NA          NA            NA
+b_hw_business         0.333903          NA          NA          NA            NA
+b_hw_commuters        0.248339          NA          NA          NA            NA
+b_hw_leisure          0.401240          NA          NA          NA            NA
+b_hw_shopping         0.297298          NA          NA          NA            NA
+b_bus_commuters       1.521754          NA          NA          NA            NA
+b_bus_leisure         0.001981          NA          NA          NA            NA
+b_bus_shopping        1.278525          NA          NA          NA            NA
+b_rail_business       1.501263          NA          NA          NA            NA
+b_rail_commuters     -0.087943          NA          NA          NA            NA
+b_rail_leisure        1.388520          NA          NA          NA            NA
+b_rail_shopping       0.064557          NA          NA          NA            NA
+b_car_inertia         1.448639          NA          NA          NA            NA
+b_car_available      -0.025221          NA          NA          NA            NA
+b_car_male            0.043323          NA          NA          NA            NA
+b_bus_disc           -0.200368          NA          NA          NA            NA
+b_rail_disc           0.303332          NA          NA          NA            NA
+b_bus_ga              1.023003          NA          NA          NA            NA
+b_rail_ga            -0.906305          NA          NA          NA            NA
+mu_mc_car_bus        -0.972125          NA          NA          NA            NA
+mu_mc_car_rail        0.612936          NA          NA          NA            NA
+mu_rc_bus             2.815795          NA          NA          NA            NA
+mu_rc_car             0.110228          NA          NA          NA            NA
+mu_rc_rail_by_car     0.158792          NA          NA          NA            NA
+mu_rc_rail            1.000000          NA          NA          NA            NA
+
+
+Overview of choices for MNL model component 1:
+                                    car    bus
+Times available                  480.00 480.00
+Times chosen                     152.00 328.00
+Percentage chosen overall         31.67  68.33
+Percentage chosen when available  31.67  68.33
+
+
+Overview of choices for MNL model component 2:
+                                     car    rail
+Times available                  5784.00 5784.00
+Times chosen                     3827.00 1957.00
+Percentage chosen overall          66.17   33.83
+Percentage chosen when available   66.17   33.83
+
+
+Overview of choices for MNL model component 3:
+                                       a       b
+Times available                  1206.00 1206.00
+Times chosen                      607.00  599.00
+Percentage chosen overall          50.33   49.67
+Percentage chosen when available   50.33   49.67
+
+
+Overview of choices for MNL model component 4:
+                                       a       b
+Times available                  2838.00 2838.00
+Times chosen                     1467.00 1371.00
+Percentage chosen overall          51.69   48.31
+Percentage chosen when available   51.69   48.31
+
+
+Overview of choices for MNL model component 5:
+                                       a       b
+Times available                  2061.00 2061.00
+Times chosen                     1052.00 1009.00
+Percentage chosen overall          51.04   48.96
+Percentage chosen when available   51.04   48.96
+
+
+Overview of choices for MNL model component 6:
+                                       a       b
+Times available                  3501.00 3501.00
+Times chosen                     1735.00 1766.00
+Percentage chosen overall          49.56   50.44
+Percentage chosen when available   49.56   50.44
+
+
+Classical covariance matrix:
+                                asc_b   b_tt_pt_business  b_tt_pt_commuters    b_tt_pt_leisure   b_tt_pt_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                    b_tt_car_business b_tt_car_commuters   b_tt_car_leisure  b_tt_car_shopping               b_dc
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                        b_tc_business     b_tc_commuters       b_tc_leisure      b_tc_shopping      b_ic_business
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                       b_ic_commuters       b_ic_leisure      b_ic_shopping      b_hw_business     b_hw_commuters
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                         b_hw_leisure      b_hw_shopping    b_bus_commuters      b_bus_leisure     b_bus_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                      b_rail_business   b_rail_commuters     b_rail_leisure    b_rail_shopping      b_car_inertia
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                      b_car_available         b_car_male         b_bus_disc        b_rail_disc           b_bus_ga
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                            b_rail_ga      mu_mc_car_bus     mu_mc_car_rail          mu_rc_bus          mu_rc_car
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                    mu_rc_rail_by_car
+asc_b                              NA
+b_tt_pt_business                   NA
+b_tt_pt_commuters                  NA
+b_tt_pt_leisure                    NA
+b_tt_pt_shopping                   NA
+b_tt_car_business                  NA
+b_tt_car_commuters                 NA
+b_tt_car_leisure                   NA
+b_tt_car_shopping                  NA
+b_dc                               NA
+b_tc_business                      NA
+b_tc_commuters                     NA
+b_tc_leisure                       NA
+b_tc_shopping                      NA
+b_ic_business                      NA
+b_ic_commuters                     NA
+b_ic_leisure                       NA
+b_ic_shopping                      NA
+b_hw_business                      NA
+b_hw_commuters                     NA
+b_hw_leisure                       NA
+b_hw_shopping                      NA
+b_bus_commuters                    NA
+b_bus_leisure                      NA
+ [ reached getOption("max.print") -- omitted 17 rows ]
+
+Robust covariance matrix:
+                                asc_b   b_tt_pt_business  b_tt_pt_commuters    b_tt_pt_leisure   b_tt_pt_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                    b_tt_car_business b_tt_car_commuters   b_tt_car_leisure  b_tt_car_shopping               b_dc
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                        b_tc_business     b_tc_commuters       b_tc_leisure      b_tc_shopping      b_ic_business
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                       b_ic_commuters       b_ic_leisure      b_ic_shopping      b_hw_business     b_hw_commuters
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                         b_hw_leisure      b_hw_shopping    b_bus_commuters      b_bus_leisure     b_bus_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                      b_rail_business   b_rail_commuters     b_rail_leisure    b_rail_shopping      b_car_inertia
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                      b_car_available         b_car_male         b_bus_disc        b_rail_disc           b_bus_ga
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                            b_rail_ga      mu_mc_car_bus     mu_mc_car_rail          mu_rc_bus          mu_rc_car
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                    mu_rc_rail_by_car
+asc_b                              NA
+b_tt_pt_business                   NA
+b_tt_pt_commuters                  NA
+b_tt_pt_leisure                    NA
+b_tt_pt_shopping                   NA
+b_tt_car_business                  NA
+b_tt_car_commuters                 NA
+b_tt_car_leisure                   NA
+b_tt_car_shopping                  NA
+b_dc                               NA
+b_tc_business                      NA
+b_tc_commuters                     NA
+b_tc_leisure                       NA
+b_tc_shopping                      NA
+b_ic_business                      NA
+b_ic_commuters                     NA
+b_ic_leisure                       NA
+b_ic_shopping                      NA
+b_hw_business                      NA
+b_hw_commuters                     NA
+b_hw_leisure                       NA
+b_hw_shopping                      NA
+b_bus_commuters                    NA
+b_bus_leisure                      NA
+b_bus_shopping                     NA
+b_rail_business                    NA
+b_rail_commuters                   NA
+b_rail_leisure                     NA
+b_rail_shopping                    NA
+b_car_inertia                      NA
+b_car_available                    NA
+b_car_male                         NA
+b_bus_disc                         NA
+b_rail_disc                        NA
+b_bus_ga                           NA
+b_rail_ga                          NA
+mu_mc_car_bus                      NA
+mu_mc_car_rail                     NA
+mu_rc_bus                          NA
+mu_rc_car                          NA
+mu_rc_rail_by_car                  NA
+
+Classical correlation matrix:
+                                asc_b   b_tt_pt_business  b_tt_pt_commuters    b_tt_pt_leisure   b_tt_pt_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                    b_tt_car_business b_tt_car_commuters   b_tt_car_leisure  b_tt_car_shopping               b_dc
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                        b_tc_business     b_tc_commuters       b_tc_leisure      b_tc_shopping      b_ic_business
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                       b_ic_commuters       b_ic_leisure      b_ic_shopping      b_hw_business     b_hw_commuters
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                         b_hw_leisure      b_hw_shopping    b_bus_commuters      b_bus_leisure     b_bus_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                      b_rail_business   b_rail_commuters     b_rail_leisure    b_rail_shopping      b_car_inertia
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                      b_car_available         b_car_male         b_bus_disc        b_rail_disc           b_bus_ga
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                            b_rail_ga      mu_mc_car_bus     mu_mc_car_rail          mu_rc_bus          mu_rc_car
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+                    mu_rc_rail_by_car
+asc_b                              NA
+b_tt_pt_business                   NA
+b_tt_pt_commuters                  NA
+b_tt_pt_leisure                    NA
+b_tt_pt_shopping                   NA
+b_tt_car_business                  NA
+b_tt_car_commuters                 NA
+b_tt_car_leisure                   NA
+b_tt_car_shopping                  NA
+b_dc                               NA
+b_tc_business                      NA
+b_tc_commuters                     NA
+b_tc_leisure                       NA
+b_tc_shopping                      NA
+b_ic_business                      NA
+b_ic_commuters                     NA
+b_ic_leisure                       NA
+b_ic_shopping                      NA
+b_hw_business                      NA
+b_hw_commuters                     NA
+b_hw_leisure                       NA
+b_hw_shopping                      NA
+b_bus_commuters                    NA
+b_bus_leisure                      NA
+ [ reached getOption("max.print") -- omitted 17 rows ]
+
+Robust correlation matrix:
+                                asc_b   b_tt_pt_business  b_tt_pt_commuters    b_tt_pt_leisure   b_tt_pt_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                    b_tt_car_business b_tt_car_commuters   b_tt_car_leisure  b_tt_car_shopping               b_dc
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                        b_tc_business     b_tc_commuters       b_tc_leisure      b_tc_shopping      b_ic_business
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                       b_ic_commuters       b_ic_leisure      b_ic_shopping      b_hw_business     b_hw_commuters
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                         b_hw_leisure      b_hw_shopping    b_bus_commuters      b_bus_leisure     b_bus_shopping
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                      b_rail_business   b_rail_commuters     b_rail_leisure    b_rail_shopping      b_car_inertia
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                      b_car_available         b_car_male         b_bus_disc        b_rail_disc           b_bus_ga
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                            b_rail_ga      mu_mc_car_bus     mu_mc_car_rail          mu_rc_bus          mu_rc_car
+asc_b                              NA                 NA                 NA                 NA                 NA
+b_tt_pt_business                   NA                 NA                 NA                 NA                 NA
+b_tt_pt_commuters                  NA                 NA                 NA                 NA                 NA
+b_tt_pt_leisure                    NA                 NA                 NA                 NA                 NA
+b_tt_pt_shopping                   NA                 NA                 NA                 NA                 NA
+b_tt_car_business                  NA                 NA                 NA                 NA                 NA
+b_tt_car_commuters                 NA                 NA                 NA                 NA                 NA
+b_tt_car_leisure                   NA                 NA                 NA                 NA                 NA
+b_tt_car_shopping                  NA                 NA                 NA                 NA                 NA
+b_dc                               NA                 NA                 NA                 NA                 NA
+b_tc_business                      NA                 NA                 NA                 NA                 NA
+b_tc_commuters                     NA                 NA                 NA                 NA                 NA
+b_tc_leisure                       NA                 NA                 NA                 NA                 NA
+b_tc_shopping                      NA                 NA                 NA                 NA                 NA
+b_ic_business                      NA                 NA                 NA                 NA                 NA
+b_ic_commuters                     NA                 NA                 NA                 NA                 NA
+b_ic_leisure                       NA                 NA                 NA                 NA                 NA
+b_ic_shopping                      NA                 NA                 NA                 NA                 NA
+b_hw_business                      NA                 NA                 NA                 NA                 NA
+b_hw_commuters                     NA                 NA                 NA                 NA                 NA
+b_hw_leisure                       NA                 NA                 NA                 NA                 NA
+b_hw_shopping                      NA                 NA                 NA                 NA                 NA
+b_bus_commuters                    NA                 NA                 NA                 NA                 NA
+b_bus_leisure                      NA                 NA                 NA                 NA                 NA
+b_bus_shopping                     NA                 NA                 NA                 NA                 NA
+b_rail_business                    NA                 NA                 NA                 NA                 NA
+b_rail_commuters                   NA                 NA                 NA                 NA                 NA
+b_rail_leisure                     NA                 NA                 NA                 NA                 NA
+b_rail_shopping                    NA                 NA                 NA                 NA                 NA
+b_car_inertia                      NA                 NA                 NA                 NA                 NA
+b_car_available                    NA                 NA                 NA                 NA                 NA
+b_car_male                         NA                 NA                 NA                 NA                 NA
+b_bus_disc                         NA                 NA                 NA                 NA                 NA
+b_rail_disc                        NA                 NA                 NA                 NA                 NA
+b_bus_ga                           NA                 NA                 NA                 NA                 NA
+b_rail_ga                          NA                 NA                 NA                 NA                 NA
+mu_mc_car_bus                      NA                 NA                 NA                 NA                 NA
+mu_mc_car_rail                     NA                 NA                 NA                 NA                 NA
+mu_rc_bus                          NA                 NA                 NA                 NA                 NA
+mu_rc_car                          NA                 NA                 NA                 NA                 NA
+mu_rc_rail_by_car                  NA                 NA                 NA                 NA                 NA
+                    mu_rc_rail_by_car
+asc_b                              NA
+b_tt_pt_business                   NA
+b_tt_pt_commuters                  NA
+b_tt_pt_leisure                    NA
+b_tt_pt_shopping                   NA
+b_tt_car_business                  NA
+b_tt_car_commuters                 NA
+b_tt_car_leisure                   NA
+b_tt_car_shopping                  NA
+b_dc                               NA
+b_tc_business                      NA
+b_tc_commuters                     NA
+b_tc_leisure                       NA
+b_tc_shopping                      NA
+b_ic_business                      NA
+b_ic_commuters                     NA
+b_ic_leisure                       NA
+b_ic_shopping                      NA
+b_hw_business                      NA
+b_hw_commuters                     NA
+b_hw_leisure                       NA
+b_hw_shopping                      NA
+b_bus_commuters                    NA
+b_bus_leisure                      NA
+b_bus_shopping                     NA
+b_rail_business                    NA
+b_rail_commuters                   NA
+b_rail_leisure                     NA
+b_rail_shopping                    NA
+b_car_inertia                      NA
+b_car_available                    NA
+b_car_male                         NA
+b_bus_disc                         NA
+b_rail_disc                        NA
+b_bus_ga                           NA
+b_rail_ga                          NA
+mu_mc_car_bus                      NA
+mu_mc_car_rail                     NA
+mu_rc_bus                          NA
+mu_rc_car                          NA
+mu_rc_rail_by_car                  NA
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+    ID Avg prob per choice
+ 17227           0.1562018
+ 22309           0.2139576
+ 12948           0.2244736
+ 16020           0.2418745
+ 15899           0.2473113
+ 82013           0.2638449
+ 16684           0.2654678
+ 80287           0.2666446
+ 16165           0.3029218
+ 19031           0.3140826
+ 14216           0.3203850
+ 79594           0.3240408
+ 16117           0.3251404
+ 12857           0.3263861
+ 81539           0.3272462
+ 13669           0.3341807
+ 78986           0.3387298
+ 23989           0.3483734
+ 20117           0.3518574
+ 20838           0.3520925
+
+Changes in parameter estimates from starting values:
+                       Initial    Estimate  Difference
+asc_a                  0.00000    0.000000    0.000000
+asc_b                  0.00000   -1.461863   -1.461863
+b_tt_pt_business      -0.10860   -0.088465    0.020135
+b_tt_pt_commuters     -0.13530   -0.059599    0.075701
+b_tt_pt_leisure       -0.05710   -0.031610    0.025490
+b_tt_pt_shopping      -0.10660   -0.031314    0.075286
+b_tt_car_business     -0.11000   -0.094603    0.015397
+b_tt_car_commuters    -0.14910   -0.065373    0.083727
+b_tt_car_leisure      -0.07640   -0.029587    0.046813
+b_tt_car_shopping     -0.14620   -0.019025    0.127175
+b_dc                  -0.05720   -0.049248    0.007952
+b_tc_business         -0.13140   -0.120930    0.010470
+b_tc_commuters        -0.29200   -0.261493    0.030507
+b_tc_leisure          -0.15700   -0.104103    0.052897
+b_tc_shopping         -0.36070   -0.333913    0.026787
+b_ic_business         -1.03180   -0.665296    0.366504
+b_ic_commuters        -1.42740   -1.124665    0.302735
+b_ic_leisure          -1.14920   -0.712959    0.436241
+b_ic_shopping         -1.26920   -0.920903    0.348297
+b_hw_business         -0.03260    0.333903    0.366503
+b_hw_commuters        -0.05440    0.248339    0.302739
+b_hw_leisure          -0.03500    0.401240    0.436240
+b_hw_shopping         -0.05100    0.297298    0.348298
+b_bus_commuters        2.94280    1.521754   -1.421046
+b_bus_leisure         -1.09800    0.001981    1.099981
+b_bus_shopping         2.42570    1.278525   -1.147175
+b_rail_business        1.49480    1.501263    0.006463
+b_rail_commuters       1.33320   -0.087943   -1.421143
+b_rail_leisure         0.28860    1.388520    1.099920
+b_rail_shopping        1.21170    0.064557   -1.147143
+b_car_inertia          1.90760    1.448639   -0.458961
+b_car_available        0.58800   -0.025221   -0.613221
+b_car_male            -0.32950    0.043323    0.372823
+b_bus_disc             1.19580   -0.200368   -1.396168
+b_rail_disc            1.69950    0.303332   -1.396168
+b_bus_ga               3.65110    1.023003   -2.628097
+b_rail_ga              1.72180   -0.906305   -2.628105
+mu_mc_car_bus          0.40820   -0.972125   -1.380325
+mu_mc_car_rail         0.50510    0.612936    0.107836
+mu_rc_bus              0.98780    2.815795    1.827995
+mu_rc_car              1.22540    0.110228   -1.115172
+mu_rc_rail_by_car      0.76880    0.158792   -0.610008
+mu_rc_rail             1.00000    1.000000    0.000000
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                
+modelName              "Swiss_VOT_no_elas"  
+modelDescr             "Model from Axhausen"
+nCores                 "4"                  
+indivID                "P_NR"               
+outputDirectory        "output/"            
+debug                  "FALSE"              
+workInLogs             "FALSE"              
+seed                   "13"                 
+mixing                 "FALSE"              
+HB                     "FALSE"              
+noValidation           "FALSE"              
+noDiagnostics          "FALSE"              
+calculateLLC           "TRUE"               
+panelData              "TRUE"               
+analyticGrad           "TRUE"               
+analyticGrad_manualSet "FALSE"              
+
+Hessian routines attempted
+--------------
+numerical jacobian of LL analytical gradient
+
+Scaling in estimation
+--------------
+                        Value
+asc_b              1.46186772
+b_tt_pt_business   0.08846520
+b_tt_pt_commuters  0.05959804
+b_tt_pt_leisure    0.03160889
+b_tt_pt_shopping   0.03131448
+b_tt_car_business  0.09460223
+b_tt_car_commuters 0.06537341
+b_tt_car_leisure   0.02958683
+b_tt_car_shopping  0.01902499
+b_dc               0.04924822
+b_tc_business      0.12092825
+b_tc_commuters     0.26149541
+b_tc_leisure       0.10410403
+b_tc_shopping      0.33390841
+b_ic_business      0.66529714
+b_ic_commuters     1.12466060
+b_ic_leisure       0.71296130
+b_ic_shopping      0.92090161
+b_hw_business      0.33390286
+b_hw_commuters     0.24833940
+b_hw_leisure       0.40123870
+b_hw_shopping      0.29729839
+b_bus_commuters    1.52165685
+b_bus_leisure      0.00198089
+b_bus_shopping     1.27855728
+b_rail_business    1.50123726
+b_rail_commuters   0.08794315
+b_rail_leisure     1.38858089
+b_rail_shopping    0.06455728
+b_car_inertia      1.44865076
+b_car_available    0.02522103
+b_car_male         0.04332303
+b_bus_disc         0.20036862
+b_rail_disc        0.30333138
+b_bus_ga           1.02296728
+b_rail_ga          0.90633272
+mu_mc_car_bus      0.97212318
+mu_mc_car_rail     0.61293207
+mu_rc_bus          2.81572536
+mu_rc_car          0.11022876
+mu_rc_rail_by_car  0.15879225
+
+Scaling used in computing Hessian
+--------------
+                        Value
+asc_b              1.46186267
+b_tt_pt_business   0.08846506
+b_tt_pt_commuters  0.05959943
+b_tt_pt_leisure    0.03160950
+b_tt_pt_shopping   0.03131430
+b_tt_car_business  0.09460267
+b_tt_car_commuters 0.06537323
+b_tt_car_leisure   0.02958679
+b_tt_car_shopping  0.01902499
+b_dc               0.04924818
+b_tc_business      0.12092963
+b_tc_commuters     0.26149259
+b_tc_leisure       0.10410341
+b_tc_shopping      0.33391266
+b_ic_business      0.66529611
+b_ic_commuters     1.12466478
+b_ic_leisure       0.71295870
+b_ic_shopping      0.92090327
+b_hw_business      0.33390312
+b_hw_commuters     0.24833919
+b_hw_leisure       0.40123952
+b_hw_shopping      0.29729821
+b_bus_commuters    1.52175418
+b_bus_leisure      0.00198089
+b_bus_shopping     1.27852515
+b_rail_business    1.50126293
+b_rail_commuters   0.08794282
+b_rail_leisure     1.38852032
+b_rail_shopping    0.06455719
+b_car_inertia      1.44863866
+b_car_available    0.02522108
+b_car_male         0.04332301
+b_bus_disc         0.20036824
+b_rail_disc        0.30333225
+b_bus_ga           1.02300278
+b_rail_ga          0.90630485
+mu_mc_car_bus      0.97212533
+mu_mc_car_rail     0.61293579
+mu_rc_bus          2.81579525
+mu_rc_car          0.11022842
+mu_rc_rail_by_car  0.15879183
+
+
+apollo_probabilities
+--------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### Variables
+  bus_p = 
+    b_bus_commuters * PUR_P + 
+    b_bus_leisure * PUR_T + 
+    b_bus_shopping * PUR_E
+  
+  rail_p = 
+    b_rail_business * PUR_N + 
+    b_rail_commuters * PUR_P + 
+    b_rail_leisure * PUR_T + 
+    b_rail_shopping * PUR_E
+  
+  dist = T_DIST_C
+  tt_pt_elas = # need to multiply by TT_PT
+    b_tt_pt_business * PUR_N  +
+    b_tt_pt_commuters * PUR_P  +
+    b_tt_pt_leisure * PUR_T  +
+    b_tt_pt_shopping * PUR_E 
+  
+  tt_car_elas = # need to multiply by TT_CAR
+    b_tt_car_business * PUR_N  +
+    b_tt_car_commuters * PUR_P +
+    b_tt_car_leisure * PUR_T  +
+    b_tt_car_shopping * PUR_E 
+  
+  inc = HH_INC_A
+  tc_elas = 
+    b_tc_business * PUR_N  +
+    b_tc_commuters * PUR_P +
+    b_tc_leisure * PUR_T +
+    b_tc_shopping * PUR_E
+  
+  ic_p =               
+    b_ic_business * PUR_N +
+    b_ic_commuters * PUR_P +
+    b_ic_leisure * PUR_T +
+    b_ic_shopping * PUR_E
+  
+  hw_p = 
+    b_hw_business * PUR_N +
+    b_hw_commuters * PUR_P +
+    b_hw_leisure * PUR_T +
+    b_hw_shopping * PUR_E
+  
+  car_mc  = b_car_inertia * CAR   + b_car_available * VEH_AVA1 + b_car_male * MALE
+  bus_mc  = b_bus_disc  * DISCOUNT + b_bus_ga  * GA + bus_p
+  rail_mc = b_rail_disc * DISCOUNT + b_rail_ga  * GA + rail_p
+  
+  car_mc = car_mc
+  bus_mc = bus_mc
+  rail_mc= rail_mc
+  
+  ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
+  V = list()
+  
+  V[["a"]]    = asc_a + b_dc * S_O_C_A * CAR_A  +  tt_pt_elas * TT_A * PT_A  +  
+    tt_car_elas * TT_A * CAR_A + tc_elas * TC_A + (ic_p + hw_p) * PT_A +
+    car_mc
+  
+  V[["b"]]    = asc_b + b_dc * S_O_C_B * CAR_B  +  tt_pt_elas * TT_B * PT_B  +  
+    tt_car_elas * TT_B * CAR_B + tc_elas * TC_B + (ic_p + hw_p) * PT_B +
+    bus_mc + rail_mc
+  
+  ### Compute probabilities for the RP part of the data using MNL model
+  mnl_settings_1 = list(
+    alternatives  = c(car=1, bus = 2), 
+    avail         = list(car= 1, bus=1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(car  = mu_mc_car_bus*V[["a"]],
+                         bus  = mu_mc_car_bus*V[["b"]]),
+    rows          = (N_O_S==1)
+  )
+  
+  P[["1"]] = apollo_mnl(mnl_settings_1, functionality)
+  
+  mnl_settings_2 = list(
+    alternatives  = c(car=1, rail = 2), 
+    avail         = list(car= 1, rail=1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(car  = mu_mc_car_rail*V[["a"]],
+                         rail = mu_mc_car_rail*V[["b"]]),
+    rows          = (N_O_S==2)
+  )
+  
+  P[["2"]] = apollo_mnl(mnl_settings_2, functionality)
+  
+  mnl_settings_3 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_bus *V[["a"]],
+                         b  = mu_rc_bus *V[["b"]]),
+    rows          = (N_O_S==3)
+  )
+  
+  P[["3"]] = apollo_mnl(mnl_settings_3, functionality)
+  
+  mnl_settings_4 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_car *V[["a"]],
+                         b  = mu_rc_car *V[["b"]]),
+    rows          = (N_O_S==4)
+  )
+  
+  P[["4"]] = apollo_mnl(mnl_settings_4, functionality)
+  
+  mnl_settings_5 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_rail_by_car *V[["a"]],
+                         b  = mu_rc_rail_by_car *V[["b"]]),
+    rows          = (N_O_S==5)
+  )
+  
+  P[["5"]] = apollo_mnl(mnl_settings_5, functionality)
+  
+  mnl_settings_6 = list(
+    alternatives  = c(a=1, b = 2), 
+    avail         = list(a = 1, b = 1), 
+    choiceVar     = CHOICE, 
+    utilities     = list(a  = mu_rc_rail *V[["a"]],
+                         b  = mu_rc_rail *V[["b"]]),
+    rows          = (N_O_S==6)
+  )
+  
+  P[["6"]] = apollo_mnl(mnl_settings_6, functionality)
+  
+  ### Combined model
+  P = apollo_combineModels(P, apollo_inputs, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+  
+}
